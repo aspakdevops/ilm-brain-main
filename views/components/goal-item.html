@@ -1,0 +1,12 @@
+<div class="goal-item {{status}}">
+    <div class="goal-status">
+        {{#if (eq status 'completed')}}
+            ✓
+        {{else if (eq status 'current')}}
+            →
+        {{else}}
+            ○
+        {{/if}}
+    </div>
+    <div class="goal-text">{{text}}</div>
+</div> 

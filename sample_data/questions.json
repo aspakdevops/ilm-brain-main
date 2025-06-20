@@ -1,0 +1,1408 @@
+{
+  "subject": "physics",
+  "topic_id": 1,
+  "questions": [
+    {
+      "subtopic_id": 1,
+      "question_text": "When using the zip wire, the person moved through a vertical height of 2.0m. The person has a mass of 45kg, gravitational field strength=9.8N/kg. Calculate the change in gravitational potential energy of the person. Use the equation:Ep = mgh",
+      "question_number": "3.2",
+      "question_type": "calculation",
+      "exam_source": {
+        "year": 2019,
+        "paper": "GCSE Physics Foundation Tier(Paper-1)[8463/1F]"
+      },
+      "answer": {
+        "raw_text": "Ep = mgh=45×9.8×2.0=882 (J)",
+        "html": "E<sub>p</sub> = mgh=45×9.8×2.0=882 (J)"
+      },
+      "keywords": [
+        "mass",
+        "gravitational",
+        "energy",
+        "calculate",
+        "height",
+        "potential"
+      ]
+    },
+    {
+      "subtopic_id": 1,
+      "question_text": "Give three factors that affected the kinetic energy of the person as she reached the bottom of the zip wire.",
+      "question_number": "3.3",
+      "question_type": "list",
+      "exam_source": {
+        "year": 2019,
+        "paper": "GCSE Physics Foundation Tier(Paper-1)[8463/1F]"
+      },
+      "answer": {
+        "raw_text": "1. Change in vertical height",
+        "html": "1. Change in vertical height"
+      },
+      "keywords": [
+        "energy",
+        "kinetic",
+        "height"
+      ]
+    },
+    {
+      "subtopic_id": 1,
+      "question_text": "1) State the Law of Conservation of Energy and explain what it means in a closed system.",
+      "question_number": "1",
+      "question_type": "descriptive",
+      "exam_source": {
+        "year": 2019,
+        "paper": "GCSE Physics Foundation Tier(Paper-1)[8463/1F]"
+      },
+      "answer": {
+        "raw_text": "The Law of Conservation of Energy states that energy cannot be created or destroyed, only transferred, stored, or dissipated. In a closed system, the total energy remains constant, although it may change form or move between stores.",
+        "html": "The Law of Conservation of Energy states that energy cannot be created or destroyed, only transferred, stored, or dissipated. In a closed system, the total energy remains constant, although it may change form or move between stores."
+      },
+      "keywords": [
+        "energy",
+        "explain",
+        "transfer",
+        "conservation"
+      ]
+    },
+    {
+      "subtopic_id": 1,
+      "question_text": "2) Name four different types of energy stores and give an example of each.",
+      "question_number": "2",
+      "question_type": "identification",
+      "exam_source": {
+        "year": 2019,
+        "paper": "GCSE Physics Foundation Tier(Paper-1)[8463/1F]"
+      },
+      "answer": {
+        "raw_text": "1. Thermal – e.g. hot tea stores thermal energy. 2. Kinetic – e.g. a moving car has kinetic energy. 3. Gravitational Potential – e.g. a book on a shelf. 4. Chemical – e.g. food or a charged battery.",
+        "html": "1. Thermal – e.g. hot tea stores thermal energy. 2. Kinetic – e.g. a moving car has kinetic energy. 3. Gravitational Potential – e.g. a book on a shelf. 4. Chemical – e.g. food or a charged battery."
+      },
+      "keywords": [
+        "thermal",
+        "gravitational",
+        "energy",
+        "kinetic",
+        "potential"
+      ]
+    },
+    {
+      "subtopic_id": 1,
+      "question_text": "3) Describe two ways energy can be transferred and give an example of each.",
+      "question_number": "3",
+      "question_type": "descriptive",
+      "exam_source": {
+        "year": 2019,
+        "paper": "GCSE Physics Foundation Tier(Paper-1)[8463/1F]"
+      },
+      "answer": {
+        "raw_text": "1. Mechanically – when a force moves an object. Example: A person pushing a box. 2. Electrically – when an electric current flows. Example: A kettle heating water.",
+        "html": "1. Mechanically – when a force moves an object. Example: A person pushing a box. 2. Electrically – when an electric current flows. Example: A kettle heating water."
+      },
+      "keywords": [
+        "energy",
+        "heat",
+        "transfer",
+        "describe"
+      ]
+    },
+    {
+      "subtopic_id": 2,
+      "question_text": "Riders of the AquaShute sit on a sled and move down a slide. There is a layer of water between the sled and the slide. How does the layer of water affect the friction between the sled and the slide?",
+      "question_number": "2.1",
+      "question_type": "descriptive",
+      "exam_source": {
+        "year": 2019,
+        "paper": "GCSE Physics Foundation Tier(Paper-1)[8463/1F]"
+      },
+      "answer": {
+        "raw_text": "The friction is decreased",
+        "html": "The friction is decreased"
+      },
+      "keywords": [
+        "friction"
+      ]
+    },
+    {
+      "subtopic_id": 2,
+      "question_text": "The mass of one rider is 62.5kg. The height of the slide is 16.0m. Gravitational field strength=9.8N/kg. Calculate the gravitational potential energy of the rider at the top of the slide. Using the equation: Ep=mgh",
+      "question_number": "2.2",
+      "question_type": "calculation",
+      "exam_source": {
+        "year": 2019,
+        "paper": "GCSE Physics Foundation Tier(Paper-1)[8463/1F]"
+      },
+      "answer": {
+        "raw_text": "Ep = 62.5 x 9.8 x 16.0 Ep = 9800 (J)",
+        "html": "E<sub>p</sub> = 62.5 x 9.8 x 16.0 E<sub>p</sub> = 9800 (J)"
+      },
+      "keywords": [
+        "mass",
+        "gravitational",
+        "energy",
+        "calculate",
+        "height",
+        "potential"
+      ]
+    },
+    {
+      "subtopic_id": 2,
+      "question_text": "At the bottom of the slide, the speed of the rider is 12m/s.The mass of the rider is 62.5kg. Calculate the kinetic energy of the rider at the bottom of the slide.Use the equation: Ek=0.5×mass×(speed)^2",
+      "question_number": "2.3",
+      "question_type": "calculation",
+      "exam_source": {
+        "year": 2019,
+        "paper": "GCSE Physics Foundation Tier(Paper-1)[8463/1F]"
+      },
+      "answer": {
+        "raw_text": "",
+        "html": ""
+      },
+      "keywords": [
+        "energy",
+        "kinetic",
+        "mass",
+        "calculate"
+      ]
+    },
+    {
+      "subtopic_id": 2,
+      "question_text": "When a rider reaches the bottom of the slide, the sled decelerates and stops. Give two factors that will affect how far the sled will move before it stops.",
+      "question_number": "2.4",
+      "question_type": "list",
+      "exam_source": {
+        "year": 2019,
+        "paper": "GCSE Physics Foundation Tier(Paper-1)[8463/1F]"
+      },
+      "answer": {
+        "raw_text": "1. friction (between sled and ground) 2.air resistance",
+        "html": "1. friction (between sled and ground) 2.air resistance"
+      },
+      "keywords": [
+        "friction"
+      ]
+    },
+    {
+      "subtopic_id": 2,
+      "question_text": "Which property of the water particles changes as the temperature of the water increases? Tick one box.",
+      "question_number": "1.4",
+      "question_type": "descriptive",
+      "exam_source": {
+        "year": 2021,
+        "paper": "GCSE Physics Foundation Tier(Paper-1)[8463/1F]"
+      },
+      "answer": {
+        "raw_text": "The kinetic energy of the particles",
+        "html": "The kinetic energy of the particles"
+      },
+      "keywords": [
+        "energy",
+        "kinetic",
+        "temperature"
+      ]
+    },
+    {
+      "subtopic_id": 2,
+      "question_text": "Calculate the thermal energy needed to melt 0.250 kg of ice at 0℃ . Specific latent heat of fusion of water=334000 J/kg. Use the equation: thermal energy= mass × specific latent heat",
+      "question_number": "1.5",
+      "question_type": "calculation",
+      "exam_source": {
+        "year": 2019,
+        "paper": "GCSE Physics Foundation Tier(Paper-1)[8463/1F]"
+      },
+      "answer": {
+        "raw_text": "E = 0.250 × 334000 E = 83500 (J)",
+        "html": "E = 0.250 × 334000 E = 83500 (J)"
+      },
+      "keywords": [
+        "mass",
+        "thermal",
+        "heat",
+        "energy",
+        "calculate",
+        "specific"
+      ]
+    },
+    {
+      "subtopic_id": 2,
+      "question_text": "Choose the answers from the box. [ elastic potential gravitational potential kinetic nuclear] As the diver falls towards the water there is a decrease in her _______________ energy. As the diver falls towards the water there is an increase in her_____________energy.",
+      "question_number": "7.1",
+      "question_type": "descriptive",
+      "exam_source": {
+        "year": 2019,
+        "paper": "GCSE Physics Foundation Tier(Paper-1)[8463/1F]"
+      },
+      "answer": {
+        "raw_text": "gravitational potential kinetic",
+        "html": "gravitational potential kinetic"
+      },
+      "keywords": [
+        "gravitational",
+        "elastic",
+        "energy",
+        "kinetic",
+        "nuclear",
+        "potential"
+      ]
+    },
+    {
+      "subtopic_id": 2,
+      "question_text": "Write down the equation which links kinetic energy (Ek), mass(m), and speed (v).",
+      "question_number": "7.2",
+      "question_type": "calculation",
+      "exam_source": {
+        "year": 2019,
+        "paper": "GCSE Physics Foundation Tier(Paper-1)[8463/1F]"
+      },
+      "answer": {
+        "raw_text": "",
+        "html": ""
+      },
+      "keywords": [
+        "energy",
+        "kinetic",
+        "mass"
+      ]
+    },
+    {
+      "subtopic_id": 2,
+      "question_text": "At the instant the diver hits the water, the kinetic energy of the diver is 5040J. The speed of the diver is 12 m/s. Calculate the mass of the diver.",
+      "question_number": "7.3",
+      "question_type": "calculation",
+      "exam_source": {
+        "year": 2019,
+        "paper": "GCSE Physics Foundation Tier(Paper-1)[8463/1F]"
+      },
+      "answer": {
+        "raw_text": "",
+        "html": ""
+      },
+      "keywords": [
+        "energy",
+        "kinetic",
+        "mass",
+        "calculate"
+      ]
+    },
+    {
+      "subtopic_id": 2,
+      "question_text": "Most of the kinetic energy of the diver is transferred to the water. How does this affect the thermal energy of the water? Tick one box.",
+      "question_number": "7.4",
+      "question_type": "descriptive",
+      "exam_source": {
+        "year": 2019,
+        "paper": "GCSE Physics Foundation Tier(Paper-1)[8463/1F]"
+      },
+      "answer": {
+        "raw_text": "The thermal energy increases.",
+        "html": "The thermal energy increases."
+      },
+      "keywords": [
+        "energy",
+        "kinetic",
+        "transfer",
+        "thermal"
+      ]
+    },
+    {
+      "subtopic_id": 2,
+      "question_text": "Choose the answers from the box. [ chemical elastic potential gravitational potential kinetic nuclear] As the boy falls, there is a decrease in his _______________ energy. As the boy falls, there is an increase in his_____________energy.",
+      "question_number": "1.1",
+      "question_type": "descriptive",
+      "exam_source": {
+        "year": 2022,
+        "paper": "GCSE Physics Foundation Tier(Paper-1)[8463/1F]"
+      },
+      "answer": {
+        "raw_text": "gravitational potential kinetic",
+        "html": "gravitational potential kinetic"
+      },
+      "keywords": [
+        "gravitational",
+        "elastic",
+        "energy",
+        "kinetic",
+        "nuclear",
+        "potential"
+      ]
+    },
+    {
+      "subtopic_id": 2,
+      "question_text": "As the boy lands on the trampoline, each spring stretches 0.015m. Spring constant of the each spring= 120000 N/m. Calculate the energy stored by each spring. Use the equation: Elastic potential energy =0.5×spring constant×(extension)^2",
+      "question_number": "1.2",
+      "question_type": "calculation",
+      "exam_source": {
+        "year": 2019,
+        "paper": "GCSE Physics Foundation Tier(Paper-1)[8463/1F]"
+      },
+      "answer": {
+        "raw_text": "",
+        "html": ""
+      },
+      "keywords": [
+        "energy",
+        "calculate",
+        "potential",
+        "elastic"
+      ]
+    },
+    {
+      "subtopic_id": 2,
+      "question_text": "There are 40 springs on the trampoline. Calculate the total energy stored by the 40 springs when each spring is stretched by 0.015m. Use the answer from Question 1.2",
+      "question_number": "1.3",
+      "question_type": "calculation",
+      "exam_source": {
+        "year": 2019,
+        "paper": "GCSE Physics Foundation Tier(Paper-1)[8463/1F]"
+      },
+      "answer": {
+        "raw_text": "",
+        "html": ""
+      },
+      "keywords": [
+        "energy",
+        "calculate"
+      ]
+    },
+    {
+      "subtopic_id": 2,
+      "question_text": "The kinetic energy of the boy as he lands on the trampoline is 600J. The maximum kinetic energy of the boy after he bounces is 45% of his kinetic energy as he lands. Calculate the maximum kinetic energy of the boy after he bounces.",
+      "question_number": "1.4",
+      "question_type": "calculation",
+      "exam_source": {
+        "year": 2019,
+        "paper": "GCSE Physics Foundation Tier(Paper-1)[8463/1F]"
+      },
+      "answer": {
+        "raw_text": "",
+        "html": ""
+      },
+      "keywords": [
+        "energy",
+        "kinetic",
+        "calculate"
+      ]
+    },
+    {
+      "subtopic_id": 2,
+      "question_text": "Why is the kinetic energy of the boy after he bounces less than his kinetic energy as he lands? Tick one box.",
+      "question_number": "1.5",
+      "question_type": "descriptive",
+      "exam_source": {
+        "year": 2019,
+        "paper": "GCSE Physics Foundation Tier(Paper-1)[8463/1F]"
+      },
+      "answer": {
+        "raw_text": "Energy is transferred to the surroundings.",
+        "html": "Energy is transferred to the surroundings."
+      },
+      "keywords": [
+        "energy",
+        "kinetic",
+        "transfer"
+      ]
+    },
+    {
+      "subtopic_id": 2,
+      "question_text": "The boy had a speed of 2.0 m/s at the top of the stairs. The mass of the boy was 70kg. Calculate the kinetic energy of the boy at the top of the stairs. Use the equation: kinetic energy=0.5× mass ×(speed)^2",
+      "question_number": "2.5",
+      "question_type": "calculation",
+      "exam_source": {
+        "year": 2019,
+        "paper": "GCSE Physics Foundation Tier(Paper-1)[8463/1F]"
+      },
+      "answer": {
+        "raw_text": "",
+        "html": ""
+      },
+      "keywords": [
+        "energy",
+        "kinetic",
+        "mass",
+        "calculate"
+      ]
+    },
+    {
+      "subtopic_id": 2,
+      "question_text": "The height of the stairs was 1.7m. The mass of the girl was 50kg. Gravitational field strength=9.8N/kg. Calculate the change in gravitational potential energy of the girl. Use the equation: gravitational potential energy= mass × gravitational field strength × height",
+      "question_number": "2.2",
+      "question_type": "calculation",
+      "exam_source": {
+        "year": 2019,
+        "paper": "GCSE Physics Foundation Tier(Paper-1)[8463/1F]"
+      },
+      "answer": {
+        "raw_text": "",
+        "html": ""
+      },
+      "keywords": [
+        "mass",
+        "gravitational",
+        "energy",
+        "calculate",
+        "height",
+        "potential"
+      ]
+    },
+    {
+      "subtopic_id": 2,
+      "question_text": "Explain one reason why the power output varied.",
+      "question_number": "4.5",
+      "question_type": "descriptive",
+      "exam_source": {
+        "year": 2023,
+        "paper": "GCSE Physics Foundation Tier(Paper-1)[8463/1F]"
+      },
+      "answer": {
+        "raw_text": "The power output changed because the amount of water flowing in the river varied throughout the year. More water flow means more gravitational potential energy is transferred to kinetic energy, increasing the power output.",
+        "html": "The power output changed because the amount of water flowing in the river varied throughout the year. More water flow means more gravitational potential energy is transferred to kinetic energy, increasing the power output."
+      },
+      "keywords": [
+        "explain",
+        "power",
+        "transfer",
+        "gravitational",
+        "energy",
+        "kinetic",
+        "potential"
+      ]
+    },
+    {
+      "subtopic_id": 2,
+      "question_text": "The mass of water that passes through the hydroelectric generator each day is 2500000kg. The change in vertical height of the water is 15.0m. Gravitational field strength = 9.8 N/kg. Calculate the decrease in gravitational potential energy of the water. Use the equation: Ep=mgh",
+      "question_number": "4.2",
+      "question_type": "calculation",
+      "exam_source": {
+        "year": 2019,
+        "paper": "GCSE Physics Foundation Tier(Paper-1)[8463/1F]"
+      },
+      "answer": {
+        "raw_text": "",
+        "html": ""
+      },
+      "keywords": [
+        "mass",
+        "gravitational",
+        "energy",
+        "calculate",
+        "hydroelectric",
+        "height",
+        "potential"
+      ]
+    },
+    {
+      "subtopic_id": 2,
+      "question_text": "How do the energy stores in position B compare with the energy stores in position A? Tick one box in each row.",
+      "question_number": "6.1",
+      "question_type": "descriptive",
+      "exam_source": {
+        "year": 2019,
+        "paper": "GCSE Physics Foundation Tier(Paper-1)[8463/1F]"
+      },
+      "answer": {
+        "raw_text": "Less than at A More than at A More than at A",
+        "html": "Less than at A More than at A More than at A"
+      },
+      "keywords": [
+        "energy"
+      ]
+    },
+    {
+      "subtopic_id": 2,
+      "question_text": "The bungee cord behaves like a spring with a spring constant of 78.4 N/m. At one point in the bungee jump, the extension of the bungee cord is 25m. Calculate the elastic potential energy stored by the bungee cord. Use the equation: Elastic potential energy =0.5× spring constant × extension^2",
+      "question_number": "6.2",
+      "question_type": "calculation",
+      "exam_source": {
+        "year": 2019,
+        "paper": "GCSE Physics Foundation Tier(Paper-1)[8463/1F]"
+      },
+      "answer": {
+        "raw_text": "",
+        "html": ""
+      },
+      "keywords": [
+        "energy",
+        "calculate",
+        "potential",
+        "elastic"
+      ]
+    },
+    {
+      "subtopic_id": 2,
+      "question_text": "Bungee cord C will have a smaller extension than A or B for any bungee jumper. Give the reason why.",
+      "question_number": "6.3",
+      "question_type": "descriptive",
+      "exam_source": {
+        "year": 2019,
+        "paper": "GCSE Physics Foundation Tier(Paper-1)[8463/1F]"
+      },
+      "answer": {
+        "raw_text": "Greatest spring constant",
+        "html": "Greatest spring constant"
+      },
+      "keywords": []
+    },
+    {
+      "subtopic_id": 2,
+      "question_text": "Which bungee cord would be safest to use for a person with a large weight? Give a reason for your answer.",
+      "question_number": "6.4",
+      "question_type": "descriptive",
+      "exam_source": {
+        "year": 2019,
+        "paper": "GCSE Physics Foundation Tier(Paper-1)[8463/1F]"
+      },
+      "answer": {
+        "raw_text": "Bungee cord -A Reason-Greatest extension before snapping",
+        "html": "Bungee cord -A Reason-Greatest extension before snapping"
+      },
+      "keywords": []
+    },
+    {
+      "subtopic_id": 3,
+      "question_text": "Why did the student insulate the beaker of water?",
+      "question_number": "8.1",
+      "question_type": "descriptive",
+      "exam_source": {
+        "year": 2019,
+        "paper": "GCSE Physics Foundation Tier(Paper-1)[8463/1F]"
+      },
+      "answer": {
+        "raw_text": "To reduce energy transfer to the surroundings",
+        "html": "To reduce energy transfer to the surroundings"
+      },
+      "keywords": [
+        "energy",
+        "transfer"
+      ]
+    },
+    {
+      "subtopic_id": 3,
+      "question_text": "Give one risk to the student caused by this hazard.",
+      "question_number": "8.2",
+      "question_type": "descriptive",
+      "exam_source": {
+        "year": 2019,
+        "paper": "GCSE Physics Foundation Tier(Paper-1)[8463/1F]"
+      },
+      "answer": {
+        "raw_text": "Ignore risk of electric shock",
+        "html": "Ignore risk of electric shock"
+      },
+      "keywords": []
+    },
+    {
+      "subtopic_id": 3,
+      "question_text": "What is the resolution of the thermometer?",
+      "question_number": "8.3",
+      "question_type": "descriptive",
+      "exam_source": {
+        "year": 2019,
+        "paper": "GCSE Physics Foundation Tier(Paper-1)[8463/1F]"
+      },
+      "answer": {
+        "raw_text": "1 °C",
+        "html": "1 °C"
+      },
+      "keywords": []
+    },
+    {
+      "subtopic_id": 3,
+      "question_text": "What was the mass of the beaker?",
+      "question_number": "8.4",
+      "question_type": "descriptive",
+      "exam_source": {
+        "year": 2019,
+        "paper": "GCSE Physics Foundation Tier(Paper-1)[8463/1F]"
+      },
+      "answer": {
+        "raw_text": "0.06kg",
+        "html": "0.06kg"
+      },
+      "keywords": [
+        "mass"
+      ]
+    },
+    {
+      "subtopic_id": 3,
+      "question_text": "The energy transferred to the water was 26400J. The mass of water was 0.20kg, and the temperature increase of the water was 30°C",
+      "question_number": "8.5",
+      "question_type": "descriptive",
+      "exam_source": {
+        "year": 2019,
+        "paper": "GCSE Physics Foundation Tier(Paper-1)[8463/1F]"
+      },
+      "answer": {
+        "raw_text": "26 400 =( 0.20 x c × 30) c = c = 4400 J/kg °C",
+        "html": "26 400 =( 0.20 x c × 30) c = c = 4400 J/kg °C"
+      },
+      "keywords": [
+        "energy",
+        "temperature",
+        "transfer",
+        "mass"
+      ]
+    },
+    {
+      "subtopic_id": 3,
+      "question_text": "The student left the thermometer in the iron block for a few minutes before recording the initial temperature. Suggest why.",
+      "question_number": "9.1",
+      "question_type": "descriptive",
+      "exam_source": {
+        "year": 2019,
+        "paper": "GCSE Physics Foundation Tier(Paper-1)[8463/1F]"
+      },
+      "answer": {
+        "raw_text": "To allow the thermometer and the iron block to reach the same temperature, so the thermometer gives an accurate reading of the block's temperature.",
+        "html": "To allow the thermometer and the iron block to reach the same temperature, so the thermometer gives an accurate reading of the block's temperature."
+      },
+      "keywords": [
+        "temperature"
+      ]
+    },
+    {
+      "subtopic_id": 3,
+      "question_text": "The energy transferred to the iron block between 5 and 10 minutes was 26000J. The mass of the iron block was 2.0kg. Calculate the specific heat capacity of iron.",
+      "question_number": "9.2",
+      "question_type": "calculation",
+      "exam_source": {
+        "year": 2019,
+        "paper": "GCSE Physics Foundation Tier(Paper-1)[8463/1F]"
+      },
+      "answer": {
+        "raw_text": "",
+        "html": ""
+      },
+      "keywords": [
+        "mass",
+        "heat",
+        "transfer",
+        "energy",
+        "capacity",
+        "calculate",
+        "specific"
+      ]
+    },
+    {
+      "subtopic_id": 3,
+      "question_text": "The student repeated the investigation but wrapped insulation around the iron block. What effect will adding insulation have had on the investigation? Tick two boxes.",
+      "question_number": "9.3",
+      "question_type": "descriptive",
+      "exam_source": {
+        "year": 2019,
+        "paper": "GCSE Physics Foundation Tier(Paper-1)[8463/1F]"
+      },
+      "answer": {
+        "raw_text": "The calculated specific heat capacity will be more accurate.",
+        "html": "The calculated specific heat capacity will be more accurate."
+      },
+      "keywords": [
+        "insulation",
+        "heat",
+        "capacity",
+        "calculate",
+        "specific"
+      ]
+    },
+    {
+      "subtopic_id": 4,
+      "question_text": "What does power input mean?",
+      "question_number": "9.1",
+      "question_type": "descriptive",
+      "exam_source": {
+        "year": 2019,
+        "paper": "GCSE Physics Foundation Tier(Paper-1)[8463/1F]"
+      },
+      "answer": {
+        "raw_text": "The energy ransferred each second to the bulb.",
+        "html": "The energy ransferred each second to the bulb."
+      },
+      "keywords": [
+        "energy",
+        "power"
+      ]
+    },
+    {
+      "subtopic_id": 4,
+      "question_text": "Calculate the value of X in table 3.",
+      "question_number": "9.5",
+      "question_type": "calculation",
+      "exam_source": {
+        "year": 2019,
+        "paper": "GCSE Physics Foundation Tier(Paper-1)[8463/1F]"
+      },
+      "answer": {
+        "raw_text": "0.30 = useful power output/9.0 useful power output = 0.30 × 9.0 useful power output = 2.7 (W)",
+        "html": "0.30 = useful power output/9.0 useful power output = 0.30 × 9.0 useful power output = 2.7 (W)"
+      },
+      "keywords": [
+        "power",
+        "calculate"
+      ]
+    },
+    {
+      "subtopic_id": 4,
+      "question_text": "A boy ran up the same stairs and did 1800 J of work. The time it took the boy to run up the stairs was 1.44s. Calculate the power of the bot. Use the equation: Power= work done/ time",
+      "question_number": "2.3",
+      "question_type": "calculation",
+      "exam_source": {
+        "year": 2019,
+        "paper": "GCSE Physics Foundation Tier(Paper-1)[8463/1F]"
+      },
+      "answer": {
+        "raw_text": "",
+        "html": ""
+      },
+      "keywords": [
+        "power",
+        "calculate"
+      ]
+    },
+    {
+      "subtopic_id": 4,
+      "question_text": "Which stop-clock was used to measure the time the boy took to run up the stairs? Tick one box.",
+      "question_number": "2.4",
+      "question_type": "descriptive",
+      "exam_source": {
+        "year": 2019,
+        "paper": "GCSE Physics Foundation Tier(Paper-1)[8463/1F]"
+      },
+      "answer": {
+        "raw_text": "Stop-clock C",
+        "html": "Stop-clock C"
+      },
+      "keywords": []
+    },
+    {
+      "subtopic_id": 4,
+      "question_text": "The girl measured the height of the stairs. What measuring instrument should she have used?",
+      "question_number": "2.1",
+      "question_type": "descriptive",
+      "exam_source": {
+        "year": 2019,
+        "paper": "GCSE Physics Foundation Tier(Paper-1)[8463/1F]"
+      },
+      "answer": {
+        "raw_text": "Tape measure or meter rule.",
+        "html": "Tape measure or meter rule."
+      },
+      "keywords": [
+        "height"
+      ]
+    },
+    {
+      "subtopic_id": 4,
+      "question_text": "Write down the equation that links energy ( E), power (P), and time (t).",
+      "question_number": "4.3",
+      "question_type": "calculation",
+      "exam_source": {
+        "year": 2019,
+        "paper": "GCSE Physics Foundation Tier(Paper-1)[8463/1F]"
+      },
+      "answer": {
+        "raw_text": "",
+        "html": ""
+      },
+      "keywords": [
+        "energy",
+        "power"
+      ]
+    },
+    {
+      "subtopic_id": 4,
+      "question_text": "The hydroelectric generator transfers electrical power of 3000W to the village. Calculate the energy transferred to the village in 60 minutes.",
+      "question_number": "4.4",
+      "question_type": "calculation",
+      "exam_source": {
+        "year": 2019,
+        "paper": "GCSE Physics Foundation Tier(Paper-1)[8463/1F]"
+      },
+      "answer": {
+        "raw_text": "",
+        "html": ""
+      },
+      "keywords": [
+        "power",
+        "transfer",
+        "energy",
+        "calculate",
+        "hydroelectric"
+      ]
+    },
+    {
+      "subtopic_id": 4,
+      "question_text": "Calculate the percentage of electricity generated using hydroelectric power.",
+      "question_number": "4.1",
+      "question_type": "calculation",
+      "exam_source": {
+        "year": 2019,
+        "paper": "GCSE Physics Foundation Tier(Paper-1)[8463/1F]"
+      },
+      "answer": {
+        "raw_text": "",
+        "html": ""
+      },
+      "keywords": [
+        "power",
+        "hydroelectric",
+        "calculate"
+      ]
+    },
+    {
+      "subtopic_id": 5,
+      "question_text": "1) Explain how heat is transferred in solids.",
+      "question_number": "1",
+      "question_type": "descriptive",
+      "exam_source": {
+        "year": 2019,
+        "paper": "GCSE Physics Foundation Tier(Paper-1)[8463/1F]"
+      },
+      "answer": {
+        "raw_text": "In solids, heat is transferred by conduction. When particles are heated, they vibrate more and transfer energy to neighboring particles by colliding with them.",
+        "html": "In solids, heat is transferred by conduction. When particles are heated, they vibrate more and transfer energy to neighboring particles by colliding with them."
+      },
+      "keywords": [
+        "explain",
+        "conduction",
+        "heat",
+        "transfer",
+        "energy"
+      ]
+    },
+    {
+      "subtopic_id": 5,
+      "question_text": "2) What is thermal conductivity? Give one example of a good thermal conductor.",
+      "question_number": "2",
+      "question_type": "descriptive",
+      "exam_source": {
+        "year": 2019,
+        "paper": "GCSE Physics Foundation Tier(Paper-1)[8463/1F]"
+      },
+      "answer": {
+        "raw_text": "Thermal conductivity is a measure of how quickly a material transfers heat. A good thermal conductor is metal, such as copper.",
+        "html": "Thermal conductivity is a measure of how quickly a material transfers heat. A good thermal conductor is metal, such as copper."
+      },
+      "keywords": [
+        "heat",
+        "transfer",
+        "thermal"
+      ]
+    },
+    {
+      "subtopic_id": 5,
+      "question_text": "3) Describe how a radiator uses convection to warm a room.",
+      "question_number": "3",
+      "question_type": "descriptive",
+      "exam_source": {
+        "year": 2019,
+        "paper": "GCSE Physics Foundation Tier(Paper-1)[8463/1F]"
+      },
+      "answer": {
+        "raw_text": "A radiator heats the air around it. The warm air rises because it becomes less dense. Cooler, denser air sinks to replace it, creating a convection current that spreads heat throughout the room.",
+        "html": "A radiator heats the air around it. The warm air rises because it becomes less dense. Cooler, denser air sinks to replace it, creating a convection current that spreads heat throughout the room."
+      },
+      "keywords": [
+        "describe",
+        "heat",
+        "convection"
+      ]
+    },
+    {
+      "subtopic_id": 6,
+      "question_text": "1) How does lubrication reduce energy waste in machines?",
+      "question_number": "1",
+      "question_type": "descriptive",
+      "exam_source": {
+        "year": 2019,
+        "paper": "GCSE Physics Foundation Tier(Paper-1)[8463/1F]"
+      },
+      "answer": {
+        "raw_text": "Lubrication reduces friction between moving parts, so less energy is wasted as thermal energy. This makes machines more efficient.",
+        "html": "Lubrication reduces friction between moving parts, so less energy is wasted as thermal energy. This makes machines more efficient."
+      },
+      "keywords": [
+        "energy",
+        "friction",
+        "thermal"
+      ]
+    },
+    {
+      "subtopic_id": 6,
+      "question_text": "2) Explain how double-glazed windows reduce energy loss from a house.",
+      "question_number": "2",
+      "question_type": "descriptive",
+      "exam_source": {
+        "year": 2019,
+        "paper": "GCSE Physics Foundation Tier(Paper-1)[8463/1F]"
+      },
+      "answer": {
+        "raw_text": "Double-glazed windows have an air gap between two layers of glass, which reduces heat transfer by conduction, keeping the house warmer.",
+        "html": "Double-glazed windows have an air gap between two layers of glass, which reduces heat transfer by conduction, keeping the house warmer."
+      },
+      "keywords": [
+        "explain",
+        "conduction",
+        "heat",
+        "transfer",
+        "energy",
+        "wind"
+      ]
+    },
+    {
+      "subtopic_id": 6,
+      "question_text": "3) A student wraps a hot water container with different materials. What are they testing, and how will they know which material is best?",
+      "question_number": "3",
+      "question_type": "descriptive",
+      "exam_source": {
+        "year": 2019,
+        "paper": "GCSE Physics Foundation Tier(Paper-1)[8463/1F]"
+      },
+      "answer": {
+        "raw_text": "They are testing which material is the best thermal insulator. The best material will cause the smallest temperature drop over time, showing it retains heat most effectively.",
+        "html": "They are testing which material is the best thermal insulator. The best material will cause the smallest temperature drop over time, showing it retains heat most effectively."
+      },
+      "keywords": [
+        "temperature",
+        "heat",
+        "thermal"
+      ]
+    },
+    {
+      "subtopic_id": 6,
+      "question_text": "4) A hot water tank is wrapped in insulation and heated by a 120 W heater for 5 minutes. Assuming no energy is lost due to insulation, calculate how much energy is transferred to the water. Give your answer in joules (J).",
+      "question_number": "4",
+      "question_type": "calculation",
+      "exam_source": {
+        "year": 2019,
+        "paper": "GCSE Physics Foundation Tier(Paper-1)[8463/1F]"
+      },
+      "answer": {
+        "raw_text": "Energy = Power × Time = 120 W × 300 s = 36,000 J",
+        "html": "Energy = Power × Time = 120 W × 300 s = 36,000 J"
+      },
+      "keywords": [
+        "insulation",
+        "power",
+        "heat",
+        "transfer",
+        "energy",
+        "calculate"
+      ]
+    },
+    {
+      "subtopic_id": 7,
+      "question_text": "Write down the equation which links efficiency, total power input, and useful power output.",
+      "question_number": "9.4",
+      "question_type": "calculation",
+      "exam_source": {
+        "year": 2019,
+        "paper": "GCSE Physics Foundation Tier(Paper-1)[8463/1F]"
+      },
+      "answer": {
+        "raw_text": "Efficiency=",
+        "html": "Efficiency="
+      },
+      "keywords": [
+        "power",
+        "efficiency"
+      ]
+    },
+    {
+      "subtopic_id": 7,
+      "question_text": "Write down the equation which links efficiency, total power input, and useful power output.",
+      "question_number": "6.3",
+      "question_type": "calculation",
+      "exam_source": {
+        "year": 2019,
+        "paper": "GCSE Physics Foundation Tier(Paper-1)[8463/1F]"
+      },
+      "answer": {
+        "raw_text": "",
+        "html": ""
+      },
+      "keywords": [
+        "power",
+        "efficiency"
+      ]
+    },
+    {
+      "subtopic_id": 7,
+      "question_text": "At one time in the day, the total power input to the solar cells was 7500 W. The efficiency of the solar cells was 0.16. Calculate the useful power output of the solar cells.",
+      "question_number": "6.4",
+      "question_type": "calculation",
+      "exam_source": {
+        "year": 2019,
+        "paper": "GCSE Physics Foundation Tier(Paper-1)[8463/1F]"
+      },
+      "answer": {
+        "raw_text": "",
+        "html": ""
+      },
+      "keywords": [
+        "power",
+        "efficiency",
+        "calculate",
+        "solar"
+      ]
+    },
+    {
+      "subtopic_id": 7,
+      "question_text": "Write down the equation which links efficiency, total energy input, and useful energy output.",
+      "question_number": "8.4",
+      "question_type": "calculation",
+      "exam_source": {
+        "year": 2019,
+        "paper": "GCSE Physics Foundation Tier(Paper-1)[8463/1F]"
+      },
+      "answer": {
+        "raw_text": "",
+        "html": ""
+      },
+      "keywords": [
+        "energy",
+        "efficiency"
+      ]
+    },
+    {
+      "subtopic_id": 7,
+      "question_text": "The total energy input to the National Grid from one power station is 34.2 GJ. The National Grid has an efficiency of 0.992. Calculate the useful energy output from this power station to consumers in GJ.",
+      "question_number": "8.5",
+      "question_type": "calculation",
+      "exam_source": {
+        "year": 2019,
+        "paper": "GCSE Physics Foundation Tier(Paper-1)[8463/1F]"
+      },
+      "answer": {
+        "raw_text": "",
+        "html": ""
+      },
+      "keywords": [
+        "energy",
+        "efficiency",
+        "calculate",
+        "power"
+      ]
+    },
+    {
+      "subtopic_id": 8,
+      "question_text": "Name the parts of the National Grid labelled K,L & M.",
+      "question_number": "1.1",
+      "question_type": "identification",
+      "exam_source": {
+        "year": 2020,
+        "paper": "GCSE Physics Foundation Tier(Paper-1)[8463/1F]"
+      },
+      "answer": {
+        "raw_text": "K = Step-up transformer L = Transmission cables M = Step-down transformer",
+        "html": "K = Step-up transformer L = Transmission cables M = Step-down transformer"
+      },
+      "keywords": []
+    },
+    {
+      "subtopic_id": 8,
+      "question_text": "Calculate how many times greater the percentage of electricity generated by gas-fired power stations was in 2018 than in 2014.",
+      "question_number": "1.2",
+      "question_type": "calculation",
+      "exam_source": {
+        "year": 2019,
+        "paper": "GCSE Physics Foundation Tier(Paper-1)[8463/1F]"
+      },
+      "answer": {
+        "raw_text": "32%/8%=4times greater",
+        "html": "32%/8%=4times greater"
+      },
+      "keywords": [
+        "power",
+        "calculate"
+      ]
+    },
+    {
+      "subtopic_id": 8,
+      "question_text": "Explain one environmental effect of generating electricity using a gas-fired power station.",
+      "question_number": "1.3",
+      "question_type": "descriptive",
+      "exam_source": {
+        "year": 2019,
+        "paper": "GCSE Physics Foundation Tier(Paper-1)[8463/1F]"
+      },
+      "answer": {
+        "raw_text": "Burning gas releases carbon dioxide, contributing to global warming.",
+        "html": "Burning gas releases carbon dioxide, contributing to global warming."
+      },
+      "keywords": [
+        "power",
+        "explain"
+      ]
+    },
+    {
+      "subtopic_id": 8,
+      "question_text": "The UK government wants more electricity to be generated using renewable energy resources. What is a renewable energy resources?",
+      "question_number": "1.4",
+      "question_type": "descriptive",
+      "exam_source": {
+        "year": 2019,
+        "paper": "GCSE Physics Foundation Tier(Paper-1)[8463/1F]"
+      },
+      "answer": {
+        "raw_text": "An energy resource that can be replenished quickly.",
+        "html": "An energy resource that can be replenished quickly."
+      },
+      "keywords": [
+        "energy",
+        "renewable"
+      ]
+    },
+    {
+      "subtopic_id": 8,
+      "question_text": "Give 2 advantages of the offshore wind farm compared with the wind farm on land.",
+      "question_number": "1.5",
+      "question_type": "list",
+      "exam_source": {
+        "year": 2019,
+        "paper": "GCSE Physics Foundation Tier(Paper-1)[8463/1F]"
+      },
+      "answer": {
+        "raw_text": "1. Higher power output 2. Lower variation in power output",
+        "html": "1. Higher power output 2. Lower variation in power output"
+      },
+      "keywords": [
+        "power",
+        "wind"
+      ]
+    },
+    {
+      "subtopic_id": 9,
+      "question_text": "The solar cells on the roof of the house always face in the same direction. Explain one disadvantages caused by the solar cells only facing in one direction.",
+      "question_number": "6.1",
+      "question_type": "descriptive",
+      "exam_source": {
+        "year": 2019,
+        "paper": "GCSE Physics Foundation Tier(Paper-1)[8463/1F]"
+      },
+      "answer": {
+        "raw_text": "Solar cells aren't always pointed at the Sun.",
+        "html": "Solar cells aren't always pointed at the Sun."
+      },
+      "keywords": [
+        "explain",
+        "solar"
+      ]
+    },
+    {
+      "subtopic_id": 9,
+      "question_text": "The wasted energy that is not usefully transferred by the solar cells is dissipated. What happens to energy that has been dissipated? Tick one box.",
+      "question_number": "6.5",
+      "question_type": "descriptive",
+      "exam_source": {
+        "year": 2019,
+        "paper": "GCSE Physics Foundation Tier(Paper-1)[8463/1F]"
+      },
+      "answer": {
+        "raw_text": "The energy becomes less useful.",
+        "html": "The energy becomes less useful."
+      },
+      "keywords": [
+        "energy",
+        "transfer",
+        "solar"
+      ]
+    },
+    {
+      "subtopic_id": 9,
+      "question_text": "Why is it unlikely that all the UK's electricity needs could be met by solar power systems? Tick one box.",
+      "question_number": "6.6",
+      "question_type": "descriptive",
+      "exam_source": {
+        "year": 2019,
+        "paper": "GCSE Physics Foundation Tier(Paper-1)[8463/1F]"
+      },
+      "answer": {
+        "raw_text": "A very large area would need to be covered with solar cells.",
+        "html": "A very large area would need to be covered with solar cells."
+      },
+      "keywords": [
+        "power",
+        "solar"
+      ]
+    },
+    {
+      "subtopic_id": 10,
+      "question_text": "1) Which of the following is a shared advantage of hydroelectric, wave, and tidal power? A) They all produce air pollution B) They all rely on burning fuels C) They all use water to turn turbines and generate electricity D) They are all non-renewable",
+      "question_number": "1",
+      "question_type": "descriptive",
+      "exam_source": {
+        "year": 2019,
+        "paper": "GCSE Physics Foundation Tier(Paper-1)[8463/1F]"
+      },
+      "answer": {
+        "raw_text": "C) They all use water to turn turbines and generate electricity",
+        "html": "C) They all use water to turn turbines and generate electricity"
+      },
+      "keywords": [
+        "power",
+        "renewable",
+        "fuel",
+        "hydroelectric",
+        "non-renewable"
+      ]
+    },
+    {
+      "subtopic_id": 10,
+      "question_text": "2) Wave power is not widely used around the world. Suggest two reasons why, and explain one of them.",
+      "question_number": "2",
+      "question_type": "descriptive",
+      "exam_source": {
+        "year": 2019,
+        "paper": "GCSE Physics Foundation Tier(Paper-1)[8463/1F]"
+      },
+      "answer": {
+        "raw_text": "• Not reliable – waves depend on wind • Can harm sea life or be dangerous for boats Explanation: Waves stop when wind dies down, so energy production isn't consistent.",
+        "html": "• Not reliable – waves depend on wind • Can harm sea life or be dangerous for boats Explanation: Waves stop when wind dies down, so energy production isn't consistent."
+      },
+      "keywords": [
+        "energy",
+        "wind",
+        "explain",
+        "power"
+      ]
+    },
+    {
+      "subtopic_id": 10,
+      "question_text": "3) Tidal power is considered a good long-term energy source. Evaluate the advantages and disadvantages of using tidal barrages to generate electricity.",
+      "question_number": "3",
+      "question_type": "descriptive",
+      "exam_source": {
+        "year": 2019,
+        "paper": "GCSE Physics Foundation Tier(Paper-1)[8463/1F]"
+      },
+      "answer": {
+        "raw_text": "Tidal power is very reliable because tides happen twice a day due to the Moon's gravity. It's renewable and doesn't release pollution during operation. However, tidal barrages are expensive to build and can block boat access and harm estuary ecosystems. Also, energy output is lower during neap tides.",
+        "html": "Tidal power is very reliable because tides happen twice a day due to the Moon's gravity. It's renewable and doesn't release pollution during operation. However, tidal barrages are expensive to build and can block boat access and harm estuary ecosystems. Also, energy output is lower during neap tides."
+      },
+      "keywords": [
+        "energy",
+        "renewable",
+        "power"
+      ]
+    },
+    {
+      "subtopic_id": 11,
+      "question_text": "1) State one reason why fossil fuels are still widely used and one environmental problem they cause.",
+      "question_number": "1",
+      "question_type": "descriptive",
+      "exam_source": {
+        "year": 2019,
+        "paper": "GCSE Physics Foundation Tier(Paper-1)[8463/1F]"
+      },
+      "answer": {
+        "raw_text": "Fossil fuels are reliable and provide energy quickly when needed. They release CO₂, which contributes to global warming.",
+        "html": "Fossil fuels are reliable and provide energy quickly when needed. They release CO₂, which contributes to global warming."
+      },
+      "keywords": [
+        "energy",
+        "fuel",
+        "fossil"
+      ]
+    },
+    {
+      "subtopic_id": 11,
+      "question_text": "2) Explain why bio-fuels are considered carbon neutral and give one condition for this to be true.",
+      "question_number": "2",
+      "question_type": "descriptive",
+      "exam_source": {
+        "year": 2019,
+        "paper": "GCSE Physics Foundation Tier(Paper-1)[8463/1F]"
+      },
+      "answer": {
+        "raw_text": "Bio-fuels are made from plants that absorb CO₂ as they grow. When the fuel is burned, the CO₂ released is the same as what was absorbed. This is only true if new plants are grown quickly to replace those used.",
+        "html": "Bio-fuels are made from plants that absorb CO₂ as they grow. When the fuel is burned, the CO₂ released is the same as what was absorbed. This is only true if new plants are grown quickly to replace those used."
+      },
+      "keywords": [
+        "explain",
+        "fuel"
+      ]
+    },
+    {
+      "subtopic_id": 11,
+      "question_text": "3) Evaluate the use of nuclear power compared to fossil fuels in terms of reliability, environmental impact, and cost.",
+      "question_number": "3",
+      "question_type": "descriptive",
+      "exam_source": {
+        "year": 2019,
+        "paper": "GCSE Physics Foundation Tier(Paper-1)[8463/1F]"
+      },
+      "answer": {
+        "raw_text": "Both nuclear and fossil fuels are reliable — they provide energy when needed. Fossil fuels cause air pollution like CO₂ and sulfur dioxide, but nuclear power does not emit these gases. However, nuclear power produces dangerous radioactive waste and is expensive to build and maintain. Fossil fuel stations are cheaper but cause long-term environmental damage.",
+        "html": "Both nuclear and fossil fuels are reliable — they provide energy when needed. Fossil fuels cause air pollution like CO₂ and sulfur dioxide, but nuclear power does not emit these gases. However, nuclear power produces dangerous radioactive waste and is expensive to build and maintain. Fossil fuel stations are cheaper but cause long-term environmental damage."
+      },
+      "keywords": [
+        "power",
+        "energy",
+        "fuel",
+        "fossil",
+        "nuclear"
+      ]
+    },
+    {
+      "subtopic_id": 12,
+      "question_text": "1) Which of the following is a reason why the UK's electricity use has fallen in the 21st century? A) People now use more gas than electricity B) Fossil fuels are running out C) Appliances have become more efficient D) More nuclear power stations have been built",
+      "question_number": "1",
+      "question_type": "descriptive",
+      "exam_source": {
+        "year": 2019,
+        "paper": "GCSE Physics Foundation Tier(Paper-1)[8463/1F]"
+      },
+      "answer": {
+        "raw_text": "C) Appliances have become more efficient",
+        "html": "C) Appliances have become more efficient"
+      },
+      "keywords": [
+        "power",
+        "fuel",
+        "nuclear",
+        "fossil"
+      ]
+    },
+    {
+      "subtopic_id": 12,
+      "question_text": "2) State one reason why renewable energy use is increasing and one limitation of using renewables.",
+      "question_number": "2",
+      "question_type": "descriptive",
+      "exam_source": {
+        "year": 2019,
+        "paper": "GCSE Physics Foundation Tier(Paper-1)[8463/1F]"
+      },
+      "answer": {
+        "raw_text": "• Reason for increase: Fossil fuels pollute and will eventually run out, so people want cleaner energy sources. • Limitation: Some renewable sources like wind or solar are unreliable and can't always meet demand.",
+        "html": "• Reason for increase: Fossil fuels pollute and will eventually run out, so people want cleaner energy sources. • Limitation: Some renewable sources like wind or solar are unreliable and can't always meet demand."
+      },
+      "keywords": [
+        "energy",
+        "renewable",
+        "fuel",
+        "solar",
+        "fossil",
+        "wind"
+      ]
+    },
+    {
+      "subtopic_id": 12,
+      "question_text": "3) Explain why governments set renewable energy targets and how this affects energy companies.",
+      "question_number": "3",
+      "question_type": "descriptive",
+      "exam_source": {
+        "year": 2019,
+        "paper": "GCSE Physics Foundation Tier(Paper-1)[8463/1F]"
+      },
+      "answer": {
+        "raw_text": "Governments set renewable targets to reduce pollution and slow climate change. This pushes energy companies to invest in renewable sources to stay competitive and meet legal requirements. It encourages development of new green technologies like solar and wind power.",
+        "html": "Governments set renewable targets to reduce pollution and slow climate change. This pushes energy companies to invest in renewable sources to stay competitive and meet legal requirements. It encourages development of new green technologies like solar and wind power."
+      },
+      "keywords": [
+        "explain",
+        "power",
+        "energy",
+        "renewable",
+        "solar",
+        "wind"
+      ]
+    }
+  ]
+}

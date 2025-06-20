@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Goal Context Test Demo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+        .demo-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        .test-section {
+            margin: 20px 0;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background: #fafafa;
+        }
+        .context-display {
+            background: #001f3f;
+            color: white;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 10px 0;
+            font-family: monospace;
+        }
+        button {
+            background: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 5px;
+        }
+        button:hover {
+            background: #0056b3;
+        }
+        .status {
+            font-weight: bold;
+            color: #28a745;
+        }
+    </style>
+</head>
+<body>
+    <div class="demo-container">
+        <h1>🧪 Goal Context System Demo</h1>
+        <p>This page demonstrates how the goal context system works when goals are clicked.</p>
+        
+        <div class="test-section">
+            <h3>📋 Current Goal Context</h3>
+            <div id="context-display" class="context-display">
+                No goal context loaded yet...
+            </div>
+            <div class="status" id="context-status">Context Status: Empty</div>
+        </div>
+        
+        <div class="test-section">
+            <h3>🎯 Simulate Goal Clicks</h3>
+            <p>Click these buttons to simulate clicking different goals:</p>
+            
+            <button onclick="simulateGoalClick(1)">Goal 1: Law of Conservation</button>
+            <button onclick="simulateGoalClick(44)">Goal 44: Renewable Energy</button>
+            <button onclick="simulateGoalClick(25)">Goal 25: Energy Efficiency</button>
+            
+            <div style="margin-top: 15px;">
+                <button onclick="clearContext()" style="background: #dc3545;">Clear Context</button>
+                <button onclick="showFullContext()" style="background: #28a745;">Show Full Context</button>
+            </div>
+        </div>
+        
+        <div class="test-section">
+            <h3>📊 Context API Access</h3>
+            <p>Open browser console to see detailed logging and access <code>window.GOAL_CONTEXT</code></p>
+            <div id="api-examples">
+                <code>
+                    window.GOAL_CONTEXT.getGoal() - Get current goal<br>
+                    window.GOAL_CONTEXT.hasGoal() - Check if context has goal<br>
+                    window.GOAL_CONTEXT.clear() - Clear the context
+                </code>
+            </div>
+        </div>
+        
+        <div class="test-section">
+            <h3>🔔 Event Listener Demo</h3>
+            <div id="event-log" style="background: #f8f9fa; padding: 10px; border-radius: 5px; min-height: 100px; overflow-y: auto;">
+                Event log will appear here...
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Mini version of the goal context system for demo
+        let GOAL_CONTEXT = {
+            currentGoal: null,
+            isLoaded: false,
+            
+            setGoal: (goalData) => {
+                GOAL_CONTEXT.currentGoal = {
+                    id: goalData.goal.id,
+                    order: goalData.goal.order,
+                    description: goalData.goal.description,
+                    content: goalData.goal.content,
+                    subject: goalData.subject,
+                    topic: goalData.topic,
+                    subtopic: goalData.subtopic,
+                    loadedAt: new Date().toISOString()
+                };
+                GOAL_CONTEXT.isLoaded = true;
+                
+                console.log('💾 Goal context updated:', GOAL_CONTEXT.currentGoal);
+                
+                // Trigger custom event
+                window.dispatchEvent(new CustomEvent('goalContextChanged', {
+                    detail: GOAL_CONTEXT.currentGoal
+                }));
+                
+                updateDisplay();
+            },
+            
+            getGoal: () => GOAL_CONTEXT.currentGoal,
+            clear: () => {
+                GOAL_CONTEXT.currentGoal = null;
+                GOAL_CONTEXT.isLoaded = false;
+                console.log('🗑️ Goal context cleared');
+                updateDisplay();
+            },
+            hasGoal: () => GOAL_CONTEXT.isLoaded && GOAL_CONTEXT.currentGoal !== null
+        };
+
+        // Make globally accessible
+        window.GOAL_CONTEXT = GOAL_CONTEXT;
+
+        // Event listener
+        window.addEventListener('goalContextChanged', (event) => {
+            console.log('🔄 Goal context changed event fired:', event.detail);
+            logEvent(`Goal ${event.detail.id} loaded: "${event.detail.description}"`);
+        });
+
+        // Demo functions
+        function simulateGoalClick(goalId) {
+            // Sample goal data based on ID
+            const sampleGoals = {
+                1: {
+                    goal: { id: 1, order: 1, description: "State the Law of Conservation of Energy.", content: "Energy cannot be created or destroyed, only transformed from one form to another." },
+                    subject: { name: "Physics" },
+                    topic: { id: 1, title: "Energy" },
+                    subtopic: { id: 1, name: "Energy Stores and Systems" }
+                },
+                44: {
+                    goal: { id: 44, order: 2, description: "Explain why renewable energy use is growing.", content: "Rise in Renewables: 1. Fossil fuels are polluting and non-renewable, so there's growing interest in cleaner, sustainable energy sources. 2. Governments set environmental targets, pushing energy companies to invest in renewables. 3. Electric and hybrid cars are becoming more popular, reducing reliance on fossil fuels." },
+                    subject: { name: "Physics" },
+                    topic: { id: 1, title: "Energy" },
+                    subtopic: { id: 12, name: "Trends in Energy Resource Use" }
+                },
+                25: {
+                    goal: { id: 25, order: 1, description: "Calculate energy efficiency in various systems.", content: "Energy efficiency = useful energy output / total energy input × 100%" },
+                    subject: { name: "Physics" },
+                    topic: { id: 1, title: "Energy" },
+                    subtopic: { id: 7, name: "Energy Efficiency" }
+                }
+            };
+
+            const goalData = sampleGoals[goalId];
+            if (goalData) {
+                GOAL_CONTEXT.setGoal(goalData);
+                logEvent(`Simulated click on Goal ${goalId}`);
+            }
+        }
+
+        function clearContext() {
+            GOAL_CONTEXT.clear();
+            logEvent('Context cleared manually');
+        }
+
+        function showFullContext() {
+            const context = GOAL_CONTEXT.getGoal();
+            if (context) {
+                console.log('Full context object:', context);
+                logEvent('Full context shown in console');
+            } else {
+                logEvent('No context available to show');
+            }
+        }
+
+        function updateDisplay() {
+            const display = document.getElementById('context-display');
+            const status = document.getElementById('context-status');
+            
+            if (GOAL_CONTEXT.hasGoal()) {
+                const goal = GOAL_CONTEXT.getGoal();
+                display.innerHTML = `
+                    <strong>Goal ID:</strong> ${goal.id}<br>
+                    <strong>Order:</strong> ${goal.order}<br>
+                    <strong>Description:</strong> ${goal.description}<br>
+                    <strong>Content:</strong> ${goal.content ? goal.content.substring(0, 100) + '...' : 'No content'}<br>
+                    <strong>Context:</strong> ${goal.subject.name} → ${goal.topic.title} → ${goal.subtopic.name}<br>
+                    <strong>Loaded At:</strong> ${new Date(goal.loadedAt).toLocaleTimeString()}
+                `;
+                status.textContent = `Context Status: Active (Goal ${goal.id})`;
+                status.style.color = '#28a745';
+            } else {
+                display.textContent = 'No goal context loaded yet...';
+                status.textContent = 'Context Status: Empty';
+                status.style.color = '#dc3545';
+            }
+        }
+
+        function logEvent(message) {
+            const log = document.getElementById('event-log');
+            const timestamp = new Date().toLocaleTimeString();
+            log.innerHTML += `<div>[${timestamp}] ${message}</div>`;
+            log.scrollTop = log.scrollHeight;
+        }
+
+        // Initialize
+        logEvent('Demo page loaded - Goal Context System ready');
+    </script>
+</body>
+</html> 

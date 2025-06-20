@@ -1,0 +1,707 @@
+/* Learning Interface Layout */
+.learning-container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    color: #001f3f;
+}
+
+.learning-header {
+    background: #001f3f; /* Navy blue background */
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #001f3f;
+    color: white; /* Ensure all text is white */
+}
+
+.learning-header h1 {
+    color: white; /* Chapter title white */
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+.header-left, .header-right {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.user-avatar {
+    font-size: 1.2rem;
+}
+
+.user-name {
+    color: white; /* User name white */
+    font-weight: 500;
+}
+
+.theme-toggle {
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    padding: 0.5rem;
+    border-radius: 50%;
+    transition: background 0.2s;
+    color: white; /* Theme toggle icon white */
+}
+
+.theme-toggle:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+/* Chapter Progress Bar */
+.chapter-progress {
+    margin-top: 10px;
+    margin-left: 20px;
+    max-width: 400px;
+}
+
+.progress-info {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 8px;
+    gap: 8px;
+}
+
+.progress-text {
+    font-size: 0.9rem;
+    color: white; /* Changed from #001f3f to white */
+    font-weight: 500;
+}
+
+.progress-percentage {
+    font-size: 0.9rem;
+    color: white; /* Changed from #001f3f to white */
+    font-weight: 600;
+}
+
+.progress-bar-container {
+    width: 100%;
+    height: 8px;
+    background-color: rgba(255, 255, 255, 0.2); /* Changed to white with transparency */
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.3); /* White border */
+}
+
+.progress-bar {
+    height: 100%;
+    background: linear-gradient(90deg, #28a745 0%, #20c997 100%);
+    border-radius: 10px;
+    transition: width 0.5s ease-in-out;
+    position: relative;
+}
+
+/* Animated progress bar effect */
+.progress-bar::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+    animation: shimmer 2s infinite;
+}
+
+@keyframes shimmer {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(100%); }
+}
+
+/* Main Learning Interface Layout */
+.learning-interface {
+    flex: 1;
+    display: grid;
+    grid-template-columns: 350px 1fr 380px;
+    gap: 1.5rem;
+    overflow: hidden;
+    padding: 1.5rem;
+}
+
+/* Left Panel - Progress */
+.left-panel {
+    background: #001f3f; /* Navy blue background for outer panel */
+    padding: 2rem;
+    border-radius: 40px;
+    border: 3px solid rgba(255, 255, 255, 0.2);
+    overflow-y: auto;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+.chapter-info h2 {
+    color: white; /* White text on navy background */
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+}
+
+.chapter-info h3 {
+    color: white; /* White text on navy background */
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    font-weight: 400;
+    opacity: 0.8;
+}
+
+.progress-section h4 {
+    color: white; /* White text on navy background */
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.goals-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+/* Center Panel - Main Content */
+.center-panel {
+    background: #001f3f; /* Navy blue background for outer panel */
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    border-radius: 40px;
+    border: 3px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+.content-area {
+    flex: 1;
+    padding: 3rem;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.script-content, .question-content {
+    width: 100%;
+    max-width: 700px;
+    text-align: left;
+}
+
+.content-header h3, .question-header h3 {
+    color: white; /* Change to white for navy background */
+    font-size: 1.6rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+/* NEW: Content Card Wrapper */
+.content-card {
+    background: white;
+    border-radius: 30px;
+    padding: 0;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+/* Script Text - Now inside white card */
+.script-text {
+    background: transparent; /* No background - parent card is white */
+    padding: 2.5rem;
+    border-radius: 30px;
+    border: none; /* No border - parent card has border */
+    margin-bottom: 0; /* No margin - handled by parent */
+    line-height: 1.8;
+    font-size: 1.1rem;
+    color: #001f3f; /* Navy text on white background */
+    box-shadow: none; /* No shadow - parent card has shadow */
+}
+
+/* Question Text - Now inside white card */
+.question-text {
+    background: transparent; /* No background - parent card is white */
+    padding: 2rem;
+    border-radius: 30px;
+    border: none; /* No border - parent card has border */
+    margin-bottom: 0; /* No margin - handled by parent */
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #001f3f; /* Navy text on white background */
+    box-shadow: none; /* No shadow - parent card has shadow */
+}
+
+.answer-input {
+    margin-bottom: 1.5rem;
+}
+
+.answer-input textarea {
+    width: 100%;
+    padding: 1.5rem;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 25px;
+    background: white; /* Solid white background */
+    color: #001f3f; /* Navy text */
+    font-size: 1rem;
+    resize: vertical;
+    min-height: 140px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.answer-input textarea:focus {
+    outline: none;
+    border-color: white;
+    box-shadow: 0 4px 20px rgba(255, 255, 255, 0.3);
+}
+
+.answer-input textarea::placeholder {
+    color: rgba(0, 31, 63, 0.6);
+}
+
+.content-actions {
+    text-align: center;
+}
+
+/* Round Button Styles */
+.button-group {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    align-items: center;
+}
+
+.round-button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.round-button {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+    position: relative;
+    overflow: hidden;
+}
+
+.round-button:hover {
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+}
+
+.round-button:active {
+    transform: translateY(-1px) scale(0.98);
+}
+
+.next-button {
+    background: linear-gradient(135deg, #28a745, #20c997);
+    color: white;
+}
+
+.next-button:hover {
+    background: linear-gradient(135deg, #218838, #1cb085);
+}
+
+.try-again-button {
+    background: linear-gradient(135deg, #007bff, #6610f2);
+    color: white;
+}
+
+.try-again-button:hover {
+    background: linear-gradient(135deg, #0056b3, #520dc2);
+}
+
+.button-icon {
+    font-size: 2.2rem;
+    line-height: 1;
+    transition: transform 0.3s ease;
+}
+
+.round-button:hover .button-icon {
+    transform: scale(1.1);
+}
+
+.button-label {
+    font-size: 1rem;
+    font-weight: 600;
+    color: white;
+    text-transform: capitalize;
+    letter-spacing: 0.5px;
+}
+
+.control-buttons {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+/* User Controls */
+.user-controls {
+    background: rgba(0, 31, 63, 0.95); /* Slightly more opaque navy */
+    padding: 2rem;
+    border-radius: 0 0 35px 35px;
+    border-top: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.feedback-area {
+    margin-bottom: 1.5rem;
+    padding: 1.5rem;
+    border-radius: 25px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    background: white; /* White background for feedback */
+    color: #001f3f; /* Navy text */
+    border: 2px solid rgba(255, 255, 255, 0.4);
+}
+
+.feedback-area h4 {
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    color: #001f3f; /* Navy text */
+}
+
+.feedback-area p {
+    margin: 0;
+    color: #001f3f; /* Navy text */
+}
+
+.feedback-area.success {
+    border-color: #28a745; /* Green border for success */
+}
+
+.feedback-area.error {
+    border-color: #dc3545; /* Red border for error */
+}
+
+/* Right Panel - Help/Chatbot */
+.right-panel {
+    background: #001f3f; /* Navy blue background for outer panel */
+    border-radius: 40px;
+    border: 3px solid rgba(255, 255, 255, 0.2);
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+.help-header {
+    padding: 2rem 2rem 1rem 2rem;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 40px 40px 0 0;
+    background: transparent; /* Inherits navy from parent */
+}
+
+.help-header h4 {
+    color: white; /* White text on navy background */
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 0;
+}
+
+.close-btn {
+    background: rgba(255, 255, 255, 0.1);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    color: white;
+    font-size: 1.3rem;
+    cursor: pointer;
+    padding: 0.5rem;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s;
+}
+
+.close-btn:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: scale(1.1);
+}
+
+.chatbot-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    background: white; /* White background for inner panel */
+    margin: 0 1rem 1rem 1rem;
+    border-radius: 30px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.chat-messages {
+    flex: 1;
+    padding: 1.5rem;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background: transparent; /* Inherits white from parent */
+}
+
+.chat-input {
+    padding: 1.5rem;
+    border-top: 2px solid rgba(0, 31, 63, 0.1);
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    border-radius: 0 0 27px 27px;
+    background: transparent; /* Inherits white from parent */
+}
+
+.chat-input input {
+    flex: 1;
+    padding: 0.8rem 1.2rem;
+    border: 2px solid rgba(0, 31, 63, 0.3);
+    border-radius: 20px;
+    background: rgba(0, 31, 63, 0.05); /* Light navy background for input */
+    color: #001f3f; /* Navy text */
+    font-size: 0.9rem;
+    box-shadow: 0 2px 10px rgba(0, 31, 63, 0.1);
+    min-width: 0; /* Allows input to shrink */
+}
+
+.chat-input input:focus {
+    outline: none;
+    border-color: #001f3f;
+    box-shadow: 0 2px 15px rgba(0, 31, 63, 0.2);
+}
+
+.chat-input input::placeholder {
+    color: rgba(0, 31, 63, 0.6); /* Navy placeholder text */
+}
+
+/* Open Assistant Button */
+.open-assistant-btn {
+    position: fixed;
+    right: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #001f3f;
+    color: white;
+    border: 2px solid #001f3f;
+    border-radius: 25px;
+    padding: 15px 20px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    box-shadow: 0 4px 15px rgba(0, 31, 63, 0.3);
+    transition: all 0.3s ease;
+    z-index: 1000;
+}
+
+.open-assistant-btn:hover {
+    background: white;
+    color: #001f3f;
+    transform: translateY(-50%) scale(1.05);
+    box-shadow: 0 6px 20px rgba(0, 31, 63, 0.4);
+}
+
+.open-assistant-btn .btn-icon {
+    font-size: 1.1rem;
+}
+
+.open-assistant-btn .btn-text {
+    white-space: nowrap;
+}
+
+/* Hide button when assistant is open */
+.open-assistant-btn.hidden {
+    display: none;
+}
+
+/* Force header to stay navy blue regardless of global theme */
+.learning-container .learning-header {
+    background: #001f3f !important;
+    color: white !important;
+}
+
+.learning-container .learning-header h1,
+.learning-container .learning-header .user-name,
+.learning-container .learning-header .progress-text,
+.learning-container .learning-header .progress-percentage {
+    color: white !important;
+}
+
+.learning-container .learning-header .theme-toggle {
+    color: white !important;
+}
+
+/* Force center panel to stay navy blue */
+.learning-interface .center-panel {
+    background: #001f3f !important;
+}
+
+.learning-interface .content-header h3,
+.learning-interface .question-header h3 {
+    color: white !important;
+}
+
+/* TESTING: Visual indicator in header */
+.learning-header.testing-mode {
+    border-bottom: 3px solid #ffc107 !important;
+    position: relative;
+}
+
+.learning-header.testing-mode::after {
+    content: '🔧 TESTING MODE';
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    background: #ffc107;
+    color: #001f3f;
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+/* Goal context and breadcrumb styling */
+.goal-context {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.context-breadcrumb {
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.8);
+    font-weight: 500;
+}
+
+.goal-order {
+    font-size: 0.8rem;
+    color: #28a745;
+    background: rgba(40, 167, 69, 0.1);
+    padding: 0.3rem 0.8rem;
+    border-radius: 12px;
+    border: 1px solid rgba(40, 167, 69, 0.3);
+}
+
+/* Enhanced goal content styling */
+.goal-content-text {
+    line-height: 1.8;
+    font-size: 1.1rem;
+    color: #001f3f;
+    white-space: pre-line; /* Preserves line breaks in content */
+}
+
+/* Error message styling */
+.error-message {
+    text-align: center;
+    padding: 3rem;
+    color: white;
+}
+
+.error-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.error-message h3 {
+    color: #dc3545;
+    margin-bottom: 1rem;
+}
+
+.error-message p {
+    margin-bottom: 2rem;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+/* API Loading Indicator */
+.api-loading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    padding: 2rem;
+    min-height: 300px;
+}
+
+.loading-spinner {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.api-loading h3 {
+    color: white;
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.api-loading p {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.loading-details {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 0.8rem 1.2rem;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.api-endpoint {
+    font-family: 'Courier New', monospace;
+    font-size: 0.9rem;
+    color: #ffc107;
+    font-weight: 500;
+}
+
+/* Draggable Goal Context Display */
+#goal-context-display {
+    transition: transform 0.2s ease, box-shadow 0.2s ease !important;
+}
+
+#goal-context-display:hover {
+    box-shadow: 0 6px 20px rgba(0,0,0,0.4) !important;
+}
+
+#goal-context-display:active {
+    cursor: grabbing !important;
+}
+
+/* Prevent text selection during drag */
+#goal-context-display.dragging {
+    user-select: none !important;
+    -webkit-user-select: none !important;
+    -moz-user-select: none !important;
+    -ms-user-select: none !important;
+}

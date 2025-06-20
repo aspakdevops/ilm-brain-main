@@ -1,0 +1,378 @@
+{
+  "subjects": [
+    {
+      "name": "Physics",
+      "description": "Complete coverage of physics concepts for GCSE",
+      "topics": [
+        {
+          "id": 1,
+          "title": "Energy",
+          "topic_number": 1,
+          "description": "Complete coverage of energy concepts for GCSE Physics",
+          "subtopics": [
+            {
+              "id": 1,
+              "name": "Energy Stores and Systems",
+              "order": 1,
+              "goals": [
+                {
+                  "id": 1,
+                  "order": 1,
+                  "description": "State the Law of Conservation of Energy.",
+                  "content": "The Law of Conservation of Energy states that energy cannot be created or destroyed, only transferred, stored, or dissipated. The total energy in a closed system remains constant."
+                },
+                {
+                  "id": 2,
+                  "order": 2,
+                  "description": "Identify and define the 8 main types of energy stores .",
+                  "content": "The 8 energy stores and their definitions:\n1. Thermal energy – energy stored due to the temperature of an object (linked to particle vibrations).\n2. Kinetic energy – energy stored in moving objects.\n3. Gravitational potential energy (GPE) – energy stored in an object raised above the ground due to Earth's gravity.\n4. Elastic potential energy – energy stored in stretched or compressed objects (e.g. springs, elastic bands).\n5. Chemical energy – energy stored in chemical bonds, e.g. in food, fuel, and batteries.\n6. Magnetic energy – energy stored when magnetic poles are pushed together or pulled apart.\n7. Electrostatic energy – energy stored due to the attraction or repulsion between electric charges.\n8. Nuclear energy – energy stored in the nucleus of atoms, released during nuclear reactions (fusion/fission)."
+                },
+                {
+                  "id": 3,
+                  "order": 3,
+                  "description": "Describe the 4 ways energy can be transferred.",
+                  "content": "The 4 ways energy can be transferred:\n1. Mechanically – when a force acts on an object and moves it (e.g. pushing, stretching, turning).\n2. Electrically – when a current flows through a circuit (e.g. in a wire or appliance).\n3. By heating – when thermal energy is transferred from a hotter object to a cooler one.\n4. By radiation – via waves, such as light or sound (e.g. sunlight transferring energy to Earth)."
+                },
+                {
+                  "id": 4,
+                  "order": 4,
+                  "description": "Show how energy transfers in real-life systems.",
+                  "content": "Examples of energy transfer in systems:\n• A kettle: Electrical energy → Thermal energy (heating water).\n• A ball thrown upward: Chemical energy (muscles) → Kinetic energy → GPE.\n• Braking car: Kinetic energy → Thermal energy (due to friction).\n• Bungee jump: GPE → Kinetic → Elastic potential → Kinetic → GPE."
+                }
+              ]
+            },
+            {
+              "id": 2,
+              "name": "Kinetic and Potential Energy Stores",
+              "order": 2,
+              "goals": [
+                {
+                  "id": 5,
+                  "order": 1,
+                  "description": "Describe how energy is stored in moving, raised and stretched objects.",
+                  "content": "Moving objects store kinetic energy; raised objects store gravitational potential energy (GPE); stretched or compressed objects store elastic potential energy."
+                },
+                {
+                  "id": 6,
+                  "order": 2,
+                  "description": "Explain what each energy store depends on.",
+                  "content": "• Kinetic energy depends on mass and speed. • GPE depends on mass, height, and gravitational field strength. • Elastic potential energy depends on the spring constant and extension."
+                },
+                {
+                  "id": 7,
+                  "order": 3,
+                  "description": "Introduce the key formulas for calculating energy in these stores.",
+                  "content": "Kinetic: Eₖ = ½mv²; Gravitational potential: Eₚ = mgh; Elastic potential: Eₑ = ½ke² (if within the limit of proportionality)."
+                },
+                {
+                  "id": 8,
+                  "order": 4,
+                  "description": "Apply the formulas using real-life examples.",
+                  "content": "Example: A 2500 kg car moving at 20 m/s has Eₖ = ½ × 2500 × 20² = 500,000J"
+                }
+              ]
+            },
+            {
+              "id": 3,
+              "name": "Specific Heat Capacity",
+              "order": 3,
+              "goals": [
+                {
+                  "id": 9,
+                  "order": 1,
+                  "description": "Understand what specific heat capacity means.",
+                  "content": "Specific heat capacity is how much energy is needed to raise the temperature of 1 kg of a substance by 1°C."
+                },
+                {
+                  "id": 10,
+                  "order": 2,
+                  "description": "Learn and use the specific heat capacity formula.",
+                  "content": "Formula: ΔE = mcΔθ, where ΔE is the change in thermal energy (J), m is the mass (kg), c is the specific heat capacity (J/kg°C), and Δθ is the temperature change (°C)."
+                },
+                {
+                  "id": 11,
+                  "order": 3,
+                  "description": "Carry out the specific heat capacity practical.",
+                  "content": "Method: 1) Use a solid metal block with heater and thermometer. 2) Wrap in insulation. 3) Record temperature over time using stopwatch. 4) Calculate power (P = VI) and energy (E = Pt)."
+                },
+                {
+                  "id": 12,
+                  "order": 4,
+                  "description": "Calculate energy transferred and analyze results.",
+                  "content": "Plot energy transferred vs. temperature change. From gradient and mass, calculate: c = 1 / (gradient × mass). Compare different materials' capacities."
+                }
+              ]
+            },
+            {
+              "id": 4,
+              "name": "Conservation of Energy and Power",
+              "order": 4,
+              "goals": [
+                {
+                  "id": 13,
+                  "order": 1,
+                  "description": "State the principle of energy conservation.",
+                  "content": "Law of Conservation of Energy: Energy cannot be created or destroyed — it can only be transferred, stored, or dissipated. The total energy in a closed system remains constant."
+                },
+                {
+                  "id": 14,
+                  "order": 2,
+                  "description": "Explain energy dissipation and wasted energy.",
+                  "content": "Wasted energy is often dissipated as heat or sound, reducing useful output.Example: In a phone, energy from the battery is useful, but some is wasted as thermal energy (phone gets warm)."
+                },
+                {
+                  "id": 15,
+                  "order": 3,
+                  "description": "Describe energy transfers in closed systems .",
+                  "content": "Closed systems don't lose energy – total energy stays constant.Example: In a sealed flask with hot soup and a cold spoon, energy moves from soup to spoon, but no energy leaves the system."
+                },
+                {
+                  "id": 16,
+                  "order": 4,
+                  "description": "Introduce the concept of power and apply formulas.",
+                  "content": "Power is the rate of energy transfer (how fast work is done). Formula: Power = Energy(E) / Time(T) or Power = Work(W) / Time(T). Power is measured in watts (W).1 W = 1 J/s. Example: Lifting needs 8000 J. Motor A takes 50 s, so power = 8000 /50 = 160 W. Motor A is more powerful than one taking longer."
+                }
+              ]
+            },
+            {
+              "id": 5,
+              "name": "Conduction and Convection",
+              "order": 5,
+              "goals": [
+                {
+                  "id": 17,
+                  "order": 1,
+                  "description": "Explain how conduction works in solids.",
+                  "content": "Conduction: particles vibrate and transfer energy through collisions, mainly in solids."
+                },
+                {
+                  "id": 18,
+                  "order": 2,
+                  "description": "Describe thermal conductivity.",
+                  "content": "Thermal conductivity is a measure of how well a material transfers heat through it.When you heat an object, energy is added to its thermal energy store. This makes its particles vibrate faster (they gain kinetic energy) and pass energy along by bumping into other particles.Materials with high thermal conductivity transfer heat quickly, those with low thermal conductivity are better insulators."
+                },
+                {
+                  "id": 19,
+                  "order": 3,
+                  "description": "Explain how convection works in liquids and gases.",
+                  "content": "Convection happens in liquids and gases. Heated particles move faster, spread out, and become less dense, so they rise. Cooler, denser fluid sinks — this creates a convection current. Example: A radiator heats air → warm air rises → cool air replaces it → cycle repeats to warm the room."
+                }
+              ]
+            },
+            {
+              "id": 6,
+              "name": "Reducing Unwanted Energy Transfers",
+              "order": 6,
+              "goals": [
+                {
+                  "id": 20,
+                  "order": 1,
+                  "description": "Identify causes of unwanted energy transfer.",
+                  "content": "Energy is wasted by friction and heat transfer to surroundings.Friction causes energy to be wasted as thermal energy."
+                },
+                {
+                  "id": 21,
+                  "order": 2,
+                  "description": "Explain methods to reduce energy loss by friction.",
+                  "content": "Lubricants reduce friction; smoother surfaces reduce resistance."
+                },
+                {
+                  "id": 22,
+                  "order": 3,
+                  "description": "Describe ways to reduce heat loss in homes and investigate insulation with a practical activity.",
+                  "content": "Insulation methods: cavity walls, loft insulation, double glazing, draught-proofing. Practical: Wrap hot containers in various insulators and record temp drop.Less temperature drop means better insulation.Thicker insulation = better heat retention."
+                }
+              ]
+            },
+            {
+              "id": 7,
+              "name": "Efficiency",
+              "order": 7,
+              "goals": [
+                {
+                  "id": 23,
+                  "order": 1,
+                  "description": "Understand how energy is wasted in devices.",
+                  "content": "Devices waste energy, mostly as heat or sound.This wasted energy goes into useless stores (like thermal stores of the surroundings)."
+                },
+                {
+                  "id": 24,
+                  "order": 2,
+                  "description": "Define and improve efficiency.",
+                  "content": "Efficiency is a measure of how much of the energy input to a system is usefully transferred, rather than wasted.Efficiency equation (using energy): Efficiency = Useful output energy / Total input energy. Efficiency equation (using power): Efficiency = Useful power output / Total power input. Improve efficiency by insulating, lubricating, or streamlining the device."
+                },
+                {
+                  "id": 25,
+                  "order": 3,
+                  "description": "Use the efficiency equations.",
+                  "content": "Efficiency = (Useful output ÷ Total input) × 100%."
+                },
+                {
+                  "id": 26,
+                  "order": 4,
+                  "description": "Apply examples and real-life contexts.",
+                  "content": "Example: A blender is 70% efficient, with 600 W input. Useful output power = 0.7 × 600 = 420 W."
+                }
+              ]
+            },
+            {
+              "id": 8,
+              "name": "Energy Resources and their Uses",
+              "order": 8,
+              "goals": [
+                {
+                  "id": 27,
+                  "order": 1,
+                  "description": "Identify the main uses of energy resources.",
+                  "content": "Energy resources are mainly used for electricity generation, but also for transport and heating."
+                },
+                {
+                  "id": 28,
+                  "order": 2,
+                  "description": "Distinguish between non-renewable and renewable energy sources.",
+                  "content": "Non-renewable energy resources include fossil fuels (coal, oil, gas) and nuclear fuel (uranium, plutonium). - They will run out one day. - They cause environmental damage but currently provide most of our energy. 3) Renewable energy resources include: - 1) The Sun (Solar) - 2) Wind - 3) Water waves - 4) Hydro-electricity - 5) Bio-fuel - 6) Tides - 7) Geothermal - These won't run out, but they are often less reliable and produce less energy."
+                },
+                {
+                  "id": 29,
+                  "order": 3,
+                  "description": "Explain how energy resources are used in transport.",
+                  "content": "Energy for transport: - Non-renewables: a) Most cars use petrol or diesel, made from oil. b) Some trains use coal (old-fashioned steam trains). c) Electric vehicles (trains, some cars) use electricity — which can come from any energy source. - Renewables: a) Some vehicles run on bio-fuels or bio-fuel + petrol/diesel mixes (only the bio-fuel part is renewable)."
+                },
+                {
+                  "id": 30,
+                  "order": 4,
+                  "description": "Explain how energy resources are used in heating.",
+                  "content": "Energy for heating: - Non-renewables: a) Natural gas is widely used to heat water for radiators. b) Coal is used in fireplaces. c) Electric heaters use electricity (often from non-renewables). - Renewables: a) Geothermal heat pumps use underground heat. b) Solar water heaters use sunlight to heat water. c) Bio-fuels can be burned, or electricity from renewables can be used for heating."
+                }
+              ]
+            },
+            {
+              "id": 9,
+              "name": "Wind, Solar, and Geothermal",
+              "order": 9,
+              "goals": [
+                {
+                  "id": 31,
+                  "order": 1,
+                  "description": "Introduce renewable energy and its key features.",
+                  "content": "Renewable energy doesn't run out and causes little pollution.Wind, solar, and geothermal energy are renewable — and they usually produce less electricity than fossil fuels."
+                },
+                {
+                  "id": 32,
+                  "order": 2,
+                  "description": "Describe how wind power works and its benefits and limitations.",
+                  "content": "How Wind Power Works: Wind turbines are placed in windy areas like coastal regions or hills. The wind turns the turbine blades, which spin a generator to produce electricity.\nBenefits: - Produces no pollution during operation (only during manufacturing). - Renewable and sustainable source of energy. - No fuel costs. - Low running costs after installation.\nLimitations/Disadvantages: - Can spoil the view in natural areas. - Noisy, which can be a nuisance near homes. - Doesn't work well without enough wind. - Can't increase power output on demand. - Typically work 70–85% of the time depending on weather. - High initial setup cost (but low maintenance after)."
+                },
+                {
+                  "id": 33,
+                  "order": 3,
+                  "description": "Explain how solar power works and its benefits and limitations.",
+                  "content": "How Solar Power Works: Solar cells convert sunlight directly into electricity. They are commonly used in devices like calculators, road signs, remote locations, and satellites.\nBenefits: - No pollution during use. - Reliable in sunny countries. - Still useful in cloudy places like the UK. - Free energy after installation.\nLimitations/Disadvantages: - Making them requires energy, which may come from polluting sources. - Only works during the daytime. - Can't increase output on demand. - High initial cost, though running costs are low."
+                },
+                {
+                  "id": 34,
+                  "order": 4,
+                  "description": "Describe geothermal power and its strengths and limitations.",
+                  "content": "How Geothermal Power Works: Geothermal energy uses underground heat, which comes from the radioactive decay of elements inside the Earth. It works best in volcanic areas. It can be used to generate electricity or for direct heating.\nStrengths/Advantages: - Reliable energy source. - Environmentally friendly (low emissions). - Dual use: electricity and heating.\nLimitations/Disadvantages: - Few suitable locations (needs volcanic or tectonically active areas). - High installation costs."
+                }
+              ]
+            },
+            {
+              "id": 10,
+              "name": "Hydro-electricity, Waves, and Tides",
+              "order": 10,
+              "goals": [
+                {
+                  "id": 35,
+                  "order": 1,
+                  "description": "Introduce the common features.",
+                  "content": "Common Features: All three use water to generate electricity, but each works in a different way. They are renewable, produce no pollution during use, and have low running costs, though setup can be expensive. Each has its own environmental impact."
+                },
+                {
+                  "id": 36,
+                  "order": 2,
+                  "description": "Explain how hydro-power works and its key points .",
+                  "content": "How It Works: A valley is flooded by building a dam. Water stored behind the dam flows out through turbines, which spin to generate electricity.\nAdvantages: - No pollution during use - Can provide electricity very quickly when demand increases - Reliable, except during droughts - Very low running costs - Works on small scale in remote areas.\nDisadvantages: - Flooding can destroy habitats - May release methane/CO₂ from rotting vegetation - High initial setup cost."
+                },
+                {
+                  "id": 37,
+                  "order": 3,
+                  "description": "Describe wave power and its practical uses.",
+                  "content": "How It Works: Small turbines are placed along the coast. Waves move the turbines, which then generate electricity.\nAdvantages: - No pollution - Useful in island or coastal communities.\nDisadvantages: - Can harm marine life, spoil the view, and interfere with boats - Not reliable — needs strong waves - High initial cost, but low running costs - Not suitable for large-scale use."
+                },
+                {
+                  "id": 38,
+                  "order": 4,
+                  "description": "Summarize tidal power and its potential.",
+                  "content": "How It Works: Tidal barrages (large dams) are built across river estuaries. As tides come in and out, water flows through turbines, generating electricity.\nAdvantages: - Very reliable (tides happen twice a day) - No pollution - Can generate large amounts of energy - Low running costs.\nDisadvantages: - Can block boats and change habitats - Less energy during neap tides or when water levels are equal on both sides - High setup cost - Only works in suitable estuary locations."
+                }
+              ]
+            },
+            {
+              "id": 11,
+              "name": "Bio-fuels and Non-renewables",
+              "order": 11,
+              "goals": [
+                {
+                  "id": 39,
+                  "order": 1,
+                  "description": "Introduce and define the two types of energy resources.",
+                  "content": "Energy resources are classified into two main types: - Renewable (e.g. bio-fuels): Can be replenished naturally. - Non-renewable (e.g. fossil fuels and nuclear): Finite sources that will eventually run out."
+                },
+                {
+                  "id": 40,
+                  "order": 2,
+                  "description": "Explain how bio-fuels work and their environmental impact.",
+                  "content": "How Bio-Fuels Work: Made from plants or animal waste. Can be burned to generate electricity or used to fuel vehicles.\nAdvantages: - Renewable and fairly reliable - Claimed to be carbon neutral if plants are regrown quickly .\nDisadvantages: - Expensive to refine - Cannot respond instantly to demand - Using land for fuel reduces space for food crops - May cause deforestation, destroying habitats and releasing CO₂ and methane."
+                },
+                {
+                  "id": 41,
+                  "order": 3,
+                  "description": "Describe non-renewable energy.",
+                  "content": "Includes fossil fuels (coal, oil, gas) and nuclear power. Burned or undergo fission to release energy.\nAdvantages: - Reliable — always fuel available - Quick response to demand - Fossil fuels are cheap to use.\nDisadvantages: - Non-renewable — could run out in ~100 years - Burning fossil fuels produces CO₂ (global warming), SO₂ (acid rain) - Oil spills, mining, and power stations harm the environment - Nuclear: Low emissions but creates dangerous waste, is costly, and carries disaster risk (e.g. Fukushima)."
+                },
+                {
+                  "id": 42,
+                  "order": 4,
+                  "description": "Compare overall impacts and suitability.",
+                  "content": "Bio-fuels are renewable and may help reduce emissions, but are costly, take up farmland, and can harm ecosystems through deforestation. Non-renewables are cheaper and reliable, but cause pollution, are finite, and pose environmental risks."
+                }
+              ]
+            },
+            {
+              "id": 12,
+              "name": "Trends in Energy Resource Use",
+              "order": 12,
+              "goals": [
+                {
+                  "id": 43,
+                  "order": 1,
+                  "description": "Describe current energy use and fossil fuel dependence.",
+                  "content": "Fossil Fuel Dependence: 1.UK electricity use increased throughout the 20th century, but has declined in the 21st century due to more efficient appliances and improved energy-saving habits. 2. Most electricity still comes from fossil fuels and nuclear power. 3. Fossil fuels are also widely used for cars, heating, and cooking."
+                },
+                {
+                  "id": 44,
+                  "order": 2,
+                  "description": "Explain why renewable energy use is growing.",
+                  "content": "Rise in Renewables:1.Fossil fuels are polluting and non-renewable, so there's growing interest in cleaner, sustainable energy sources. 2. Governments set environmental targets, pushing energy companies to invest in renewables. 3. Electric and hybrid cars are becoming more popular, reducing reliance on fossil fuels."
+                },
+                {
+                  "id": 45,
+                  "order": 3,
+                  "description": "Identify limitations of renewable energy.",
+                  "content": "Limitations:\n1.New renewable power stations are expensive to build — leading to resistance from some people and companies.\n2.Some renewable sources are unreliable (like solar and wind) or can't respond quickly to demand.\n3.Wind farms and other renewable setups often face local opposition due to noise, views, or land use."
+                },
+                {
+                  "id": 46,
+                  "order": 4,
+                  "description": "Mention challenges with green technology.",
+                  "content": "Green Tech Challenges: Green technologies (like solar panels and hybrid cars) are still expensive, making them less accessible. However, prices are falling as technology improves and becomes more widespread."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

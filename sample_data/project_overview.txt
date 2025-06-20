@@ -1,0 +1,58 @@
+**Detailed Overview of Our AI Learning Platform Project**
+**Project Concept:**
+We designed and built a complete **AI-driven adaptive learning platform** that personalizes education based on student performance and provides real-time assistance.
+**Architecture & Flow:**
+1. **Learning Flow:** Database → LLM → Script Generation → Q&A → Evaluation → Adaptive Path
+2. **APIs Integration:** Three localhost:5000 endpoints:
+   * `/generate-script` (context, level, goals → script)
+   * `/evaluate-answer` (question, student_answer → evaluation)
+   * `/ilm-chatbot` (question, content, sub_topic → answer)
+**Data Structure:**
+* **Chapters** → **Subtopics** → **Goals** (learning objectives)
+* **Questions** mapped to subtopics with exam metadata
+* JSON files: `chapter_output.json` and `questions_output.json`
+**Backend Architecture (Node.js):**
+
+```
+src/
+├── controllers/ (learning, progress, chapters, llm)
+├── services/ (content, progress, llm, evaluation, chatbot)
+├── models/ (Chapter, Goal, UserProgress, LearningSession)
+├── routes/ (learning, chapters, progress, questions)
+├── middleware/ (validation, error handling, cors)
+└── utils/ (API client, response formatting)
+
+views/ (UI files)
+data/ (JSON files)
+
+```
+
+**Frontend Design (3-Panel Layout):**
+1. **Left Panel:** Chapter navigation + progress tracking with checkboxes
+2. **Center Panel:** Main content area for AI-generated scripts/questions
+3. **Right Panel:** Always-available chatbot help system
+4. **Bottom:** User answer input and control buttons
+**UI Evolution:**
+* **Started:** Rectangular panels with dark theme
+* **Evolved:** Oval-shaped cards with navy/white theme
+* **Final:** White background, navy blue text/borders, thin borders (1px)
+**Key Features:**
+* **Adaptive Learning:** Wrong answers → remedial content, Correct → next goal
+* **Real-time Help:** Chatbot integration for instant support
+* **Progress Tracking:** Visual goal completion with checkmarks
+* **Responsive Design:** Works on desktop, tablet, mobile
+**Technical Stack:**
+* **Backend:** Node.js, Express
+* **Frontend:** Vanilla HTML/CSS/JS (no frameworks for simplicity)
+* **AI Integration:** External LLM APIs on localhost:5000
+* **Data:** JSON-based content management
+**Current State:**
+* ✅ Complete directory structure
+* ✅ Full HTML views (`index.html`, `learning.html`)
+* ✅ Complete CSS styling with oval cards
+* ✅ JavaScript logic for learning flow
+* ✅ API integration ready
+* 🔄 Backend implementation pending
+**Next Steps:**
+You mentioned creating a new chat head - likely to implement the **Node.js backend** based on our established architecture and connect it with the frontend we've built!
+This project represents a complete end-to-end AI learning platform prototype with modern design and adaptive learning capabilities. --- read

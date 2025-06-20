@@ -1,0 +1,335 @@
+/* Button Styles */
+.btn-primary, .btn-secondary, .btn-success, .btn-help, .btn-chat {
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: all 0.3s;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 31, 63, 0.2);
+}
+
+.btn-primary {
+    background: white;
+    color: #001f3f;
+    border: 3px solid white;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+.btn-primary:hover {
+    background: #f8f9ff;
+    transform: translateY(-4px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+}
+
+.btn-secondary {
+    background: transparent;
+    color: #001f3f;
+    border: 3px solid rgba(0, 31, 63, 0.6);
+}
+
+.btn-secondary:hover {
+    background: rgba(0, 31, 63, 0.1);
+    border-color: #001f3f;
+    transform: translateY(-2px);
+}
+
+.btn-success {
+    background: #001f3f;
+    color: #fff;
+    border: 3px solid #001f3f;
+}
+
+.btn-success:hover {
+    background: #003366;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 31, 63, 0.3);
+}
+
+.btn-help {
+    background: transparent;
+    color: #001f3f;
+    border: 3px solid rgba(0, 31, 63, 0.6);
+}
+
+.btn-help:hover {
+    background: rgba(0, 31, 63, 0.1);
+    border-color: #001f3f;
+    transform: translateY(-2px);
+}
+
+.btn-chat {
+    background: #001f3f; /* Navy background */
+    color: white; /* White text */
+    padding: 0.8rem 1.2rem;
+    font-size: 0.9rem;
+    border: 2px solid #001f3f;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s;
+    box-shadow: 0 2px 10px rgba(0, 31, 63, 0.2);
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
+.btn-chat:hover {
+    background: #003366;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(0, 31, 63, 0.3);
+}
+
+/* Goal Item Cards - White cards on navy background */
+.goal-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0; /* Remove padding from outer container */
+    margin-bottom: 0.8rem;
+    border-radius: 20px;
+    transition: all 0.3s;
+    cursor: pointer;
+    border: none; /* Remove border from outer container */
+    background: transparent; /* Transparent outer container */
+}
+
+/* Goal Item Card - Inner white card */
+.goal-card {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1.2rem;
+    border-radius: 20px;
+    transition: all 0.3s;
+    cursor: pointer;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    background: white; /* White background for goal cards */
+    width: 100%;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.goal-card:hover {
+    transform: translateX(5px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.goal-item.completed .goal-card {
+    border: 2px solid #28a745; /* Green border for completed */
+    background: white;
+}
+
+.goal-item.current .goal-card {
+    border: 2px solid #007bff; /* Blue border for current */
+    background: white;
+    transform: translateX(8px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.goal-item.pending .goal-card {
+    opacity: 0.8;
+    background: white;
+    border: 2px solid rgba(0, 31, 63, 0.2);
+}
+
+.goal-status {
+    font-size: 1.2rem;
+    min-width: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #001f3f;
+}
+
+/* Goal Status Colors */
+.goal-item.completed .goal-status {
+    color: #28a745; /* Green color for completed checkmark */
+    font-weight: bold;
+}
+
+.goal-item.current .goal-status {
+    color: #007bff; /* Blue color for current arrow */
+    font-weight: bold;
+}
+
+.goal-item.pending .goal-status {
+    color: #6c757d; /* Gray color for pending circle */
+    opacity: 0.6;
+}
+
+/* TESTING MODE: Make all goals appear accessible */
+.goal-item.testing-accessible .goal-card {
+    border: 2px solid #ffc107; /* Yellow border for testing goals */
+    background: white;
+    opacity: 1; /* Full opacity instead of 0.8 */
+    cursor: pointer; /* Clickable cursor */
+}
+
+.goal-item.testing-accessible .goal-card:hover {
+    transform: translateX(5px);
+    box-shadow: 0 4px 15px rgba(255, 193, 7, 0.3);
+    border-color: #f39c12;
+}
+
+.goal-item.testing-accessible .goal-status {
+    color: #f39c12; /* Orange color for testing arrow */
+    font-weight: bold;
+}
+
+/* TESTING: Selected goal highlighting */
+.goal-item.selected-for-testing .goal-card {
+    border: 3px solid #28a745 !important; /* Green border for selected */
+    background: white; /* Keep white background, no dark overlay */
+    transform: translateX(8px);
+    box-shadow: 0 6px 20px rgba(40, 167, 69, 0.4);
+}
+
+/* TESTING: Testing indicator */
+.testing-indicator {
+    font-size: 0.8rem;
+    margin-left: auto;
+    color: #f39c12;
+}
+
+.goal-text {
+    font-size: 0.95rem;
+    line-height: 1.4;
+    flex: 1;
+    color: #001f3f; /* Navy text on white background */
+}
+
+/* Chat Message Cards - Similar to content cards */
+.chat-message {
+    max-width: 85%;
+    margin-bottom: 1rem;
+}
+
+/* Bot Message Card */
+.bot-message {
+    align-self: flex-start;
+}
+
+.bot-message .message-card {
+    background: rgba(0, 31, 63, 0.12); /* Light navy background for bot messages */
+    color: #001f3f; /* Navy text */
+    padding: 1rem 1.2rem;
+    border-radius: 20px;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    box-shadow: 0 2px 10px rgba(0, 31, 63, 0.2);
+    border: 1px solid rgba(0, 31, 63, 0.2);
+}
+
+/* User Message Card */
+.user-message {
+    align-self: flex-end;
+}
+
+.user-message .message-card {
+    background: rgba(0, 31, 63, 0.2); /* Slightly darker navy for user messages */
+    color: #001f3f; /* Navy text */
+    padding: 1rem 1.2rem;
+    border-radius: 20px;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    box-shadow: 0 2px 10px rgba(0, 31, 63, 0.2);
+    border: 1px solid rgba(0, 31, 63, 0.3);
+}
+
+/* Continue Learning Section */
+.continue-learning-section {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+.continue-learning-content {
+    background-color: white;
+    border-radius: 12px;
+    padding: 32px;
+    color: #2d3436;
+    border: 1px solid #e1e8ed;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    min-height: 160px;
+    position: relative;
+}
+
+.continue-learning-content h2 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #2d3436;
+    margin: 0 0 20px 0;
+}
+
+.continue-learning-content p {
+    margin: 12px 0;
+    font-size: 14px;
+    color: #636e72;
+    line-height: 1.5;
+}
+
+.continue-learning-content .topic-link {
+    color: #0984e3;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.continue-learning-content .goal-count {
+    color: #636e72;
+    font-size: 13px;
+    margin-top: 8px;
+}
+
+.continue-learning-button {
+    background-color: #00b894;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 24px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    position: absolute;
+    right: 32px;
+    bottom: 32px;
+}
+
+.continue-learning-button:hover {
+    background-color: #00a88a;
+    transform: translateY(-1px);
+}
+
+.continue-learning-button:active {
+    transform: translateY(0);
+}
+
+.topic-progress-bar {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    height: 8px;
+    max-width: 600px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.topic-progress-bar-fill {
+    background: #00b894;
+    height: 100%;
+    border-radius: 10px;
+    transition: width 0.6s ease;
+    width: 0;
+}
+
+.topic-progress-text {
+    font-size: 14px;
+    margin-top: 12px;
+    opacity: 0.7;
+    text-align: center;
+    color: white;
+} 

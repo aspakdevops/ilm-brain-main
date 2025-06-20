@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <title>Learning - ILM Brain</title>
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/components.css">
+    <link rel="stylesheet" href="/css/learning.css">
+    <link rel="stylesheet" href="/css/responsive.css">
+</head>
+<body>
+    <div class="learning-container">
+        <header class="learning-header testing-mode">
+            <div class="header-left">
+                <div class="navigation-bar">
+                    <button class="back-to-subtopics" onclick="history.back();">
+                        <span class="back-arrow">←</span>
+                        Back
+                    </button>
+                </div>
+                <h1>Introduction to AI</h1>
+                <!-- Add Progress Bar Here -->
+                <div class="chapter-progress">
+                    <div class="progress-info">
+                        <span class="progress-text">Chapter Progress </span>
+                        <span class="progress-percentage">25%</span>
+                    </div>
+                    <div class="progress-bar-container">
+                        <div class="progress-bar" style="width: 25%"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="header-right">
+                <div class="user-info">
+                    <span class="user-avatar">👤</span>
+                    <span class="user-name">Student</span>
+                </div>
+                <button class="theme-toggle">🌙</button>
+            </div>
+        </header>
+
+        <div class="learning-interface">
+            <!-- Left Panel - Progress -->
+            <div class="left-panel">
+                <div class="chapter-info">
+                    <h2>Introduction to AI</h2>
+                    <h3>Learn the basics of artificial intelligence</h3>
+                </div>
+                
+                <div class="progress-section">
+                    <h4>Learning Goals</h4>
+                    <div class="goals-list">
+                        <div class="goal-item completed">
+                            <div class="goal-card">
+                                <div class="goal-status">✓</div>
+                                <div class="goal-text">Understand what AI is</div>
+                            </div>
+                        </div>
+                        <div class="goal-item current">
+                            <div class="goal-card">
+                                <div class="goal-status">▶</div>
+                                <div class="goal-text">Learn about machine learning</div>
+                            </div>
+                        </div>
+                        <div class="goal-item pending">
+                            <div class="goal-card">
+                                <div class="goal-status">○</div>
+                                <div class="goal-text">Explore neural networks</div>
+                            </div>
+                        </div>
+                        <div class="goal-item pending">
+                            <div class="goal-card">
+                                <div class="goal-status">○</div>
+                                <div class="goal-text">Practice with examples</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Center Panel - Main Content -->
+            <div class="center-panel">
+                <div class="content-area">
+                    <div class="script-content">
+                        <div class="content-header">
+                            <h3>What is Artificial Intelligence?</h3>
+                        </div>
+                        <div class="content-card">
+                            <div class="script-text">
+                                Artificial Intelligence (AI) refers to the simulation of human intelligence in machines that are programmed to think and learn like humans. AI systems can perform tasks that typically require human intelligence, such as visual perception, speech recognition, decision-making, and language translation.
+                            </div>
+                        </div>
+                        <div class="content-actions">
+                            <div class="button-group">
+                                <div class="round-button-container">
+                                    <button class="round-button next-button" id="nextButton">
+                                        <span class="button-icon">→</span>
+                                    </button>
+                                    <span class="button-label">Next</span>
+                                </div>
+                                <div class="round-button-container">
+                                    <button class="round-button try-again-button" id="tryAgainButton">
+                                        <span class="button-icon">↻</span>
+                                    </button>
+                                    <span class="button-label">Try Again</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Panel - Chatbot -->
+            <div class="right-panel">
+                <div class="help-header">
+                    <h4>AI Assistant</h4>
+                    <button class="close-btn">&times;</button>
+                </div>
+                
+                <div class="chatbot-container">
+                    <div class="chat-messages">
+                        <div class="chat-message bot-message">
+                            <div class="message-card">
+                                Hello! I'm here to help you with your learning journey. Feel free to ask me any questions!
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="chat-input">
+                        <input type="text" placeholder="Ask me anything..." />
+                        <button class="btn-chat">Send</button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Open Assistant Button -->
+            <button class="open-assistant-btn hidden" id="openAssistantBtn">
+                <span class="btn-icon">💬</span>
+                <span class="btn-text">Open Assistant</span>
+            </button>
+        </div>
+    </div>
+
+    <script src="/js/progress-loader.js"></script>
+    <script src="/js/utils.js"></script>
+    <script src="/js/main.js"></script>
+    <script src="/js/learning.js"></script>
+    <script src="/js/chatbot.js"></script>
+    <script src="/js/api-client.js"></script>
+</body>
+</html> 

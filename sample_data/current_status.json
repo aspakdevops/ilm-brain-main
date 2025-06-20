@@ -1,0 +1,24 @@
+{
+  "user_id": "user_001",
+  "user_name": "John Doe",
+  "created_at": "2024-01-20T14:30:00Z",
+  "last_active": "2025-06-18T16:09:41.945Z",
+  "current_session": {
+    "subject": "physics",
+    "topic_id": 1,
+    "subtopic_id": 1,
+    "goal_id": 2
+  },
+  "courses": {
+    "physics": {
+      "topics": {
+        "1": {
+          "completed_goals": [
+            1
+          ],
+          "current_goal": 2
+        }
+      }
+    }
+  }
+}

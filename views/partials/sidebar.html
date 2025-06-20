@@ -1,0 +1,15 @@
+<div class="left-panel">
+    <div class="chapter-info">
+        <h2>{{chapter.title}}</h2>
+        <h3>{{chapter.description}}</h3>
+    </div>
+    
+    <div class="progress-section">
+        <h4>Learning Goals</h4>
+        <div class="goals-list">
+            {{#each goals}}
+                {{> goal-item goal=this}}
+            {{/each}}
+        </div>
+    </div>
+</div> 

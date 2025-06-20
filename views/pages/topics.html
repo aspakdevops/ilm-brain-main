@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <title>Topics - ILM Brain</title>
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/components.css">
+    <link rel="stylesheet" href="/css/responsive.css">
+</head>
+<body>
+    <div class="main-container">
+        <header class="hero-header">
+            <div class="hero-content">
+                <div class="breadcrumb">
+                    <button class="back-to-homepage" onclick="window.location.href='/';">
+                        <span class="back-arrow">←</span>
+                        Back to Homepage
+                    </button>
+                </div>
+                <div class="hero-badge">
+                    <span class="hero-badge-text">📚 Subject Selection</span>
+                </div>
+                <h1 class="hero-title">Physics</h1>
+                <p class="hero-subtitle">Choose Your Physics Topic</p>
+                <p class="hero-description">
+                    Explore different areas of physics and track your progress through each topic.
+                    Master the fundamentals with our comprehensive GCSE Physics curriculum.
+                </p>
+                <!-- Global Progress Display -->
+                <div id="globalProgress" class="progress-badge">Loading progress...</div>
+            </div>
+            
+            <!-- Animated Background Elements -->
+            <div class="floating-elements">
+                <div class="floating-circle circle-1"></div>
+                <div class="floating-circle circle-2"></div>
+                <div class="floating-circle circle-3"></div>
+            </div>
+        </header>
+        
+        <main class="learning-paths-section">
+            <!-- Progress Overview Section -->
+            <div class="progress-overview">
+                <div class="overall-progress">
+                    <div class="progress-header">
+                        <h3>Your Physics Progress</h3>
+                        <span class="progress-percentage">Loading...</span>
+                    </div>
+                    <div class="progress-bar-container">
+                        <div class="progress-bar" style="width: 0%"></div>
+                    </div>
+                    <p class="progress-description">Loading your progress...</p>
+                </div>
+            </div>
+
+            <div class="section-header">
+                <h2>Available Topics</h2>
+                <p>Select a topic to explore its subtopics and start learning</p>
+            </div>
+
+            <div id="topicsContainer" class="learning-paths-grid">
+                <!-- Topic cards will be dynamically inserted here -->
+                <div class="loading-state">
+                    <div class="loading-spinner"></div>
+                    <p>Loading topics...</p>
+                </div>
+            </div>
+
+            <!-- Continue Learning Section -->
+            <div class="continue-learning-section">
+                <div class="continue-card">
+                    <div class="continue-content">
+                        <h4>Continue Where You Left Off</h4>
+                        <p id="continueSubtopicText">Loading your current progress...</p>
+                        <div class="continue-details">
+                            <span id="continueTopicPath" class="continue-topic">Loading...</span>
+                            <span id="continueProgress" class="continue-progress">Loading...</span>
+                        </div>
+                    </div>
+                    <button id="continueButton" class="continue-button">
+                        <span>Continue Learning</span>
+                        <span class="continue-arrow">▶</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="features-section">
+                <div class="features-grid">
+                    <div class="feature-item">
+                        <div class="feature-icon">📖</div>
+                        <h4>Structured Learning</h4>
+                        <p>Organized topics and subtopics for systematic learning</p>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">🎯</div>
+                        <h4>Goal-Based Learning</h4>
+                        <p>Clear objectives and measurable learning outcomes</p>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">📊</div>
+                        <h4>Visual Progress</h4>
+                        <p>Track your advancement through each topic and subtopic</p>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">🔄</div>
+                        <h4>Adaptive Content</h4>
+                        <p>Content that adapts to your learning pace and style</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="/js/progress-loader.js"></script>
+    <script src="/js/utils.js"></script>
+    <script src="/js/data-service.js"></script>
+    <script src="/js/main.js"></script>
+    <script src="/js/topics.js"></script>
+</body>
+</html> 

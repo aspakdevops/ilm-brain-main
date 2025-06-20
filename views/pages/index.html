@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <title>Home - ILM Brain</title>
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/components.css">
+    <link rel="stylesheet" href="/css/responsive.css">
+</head>
+<body>
+
+    
+    <div class="main-container">
+        <header class="hero-header">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span class="hero-badge-text">⚛️ Physics Mastery</span>
+                </div>
+                <h1 class="hero-title">ILM Brain</h1>
+                <p class="hero-subtitle">Your AI Learning Companion</p>
+                <p class="hero-description">
+                    Master fundamental physics concepts with personalized learning that adapts to your style, 
+                    tracks your progress, and helps you excel in GCSE Physics.
+                </p>
+                <!-- Global Progress Display -->
+                <div id="globalProgress" class="progress-badge">Loading progress...</div>
+            </div>
+            
+            <!-- Animated Background Elements -->
+            <div class="floating-elements">
+                <div class="floating-circle circle-1"></div>
+                <div class="floating-circle circle-2"></div>
+                <div class="floating-circle circle-3"></div>
+            </div>
+        </header>
+        
+        <main class="learning-paths-section">
+            <div class="section-header">
+                <h2>Start Your Physics Journey</h2>
+                <p>Master physics fundamentals with our adaptive learning system</p>
+            </div>
+
+            <div class="learning-paths-grid">
+                <div class="learning-path-card" data-chapter-id="physics">
+                    <div class="card-header">
+                        <div class="card-icon">⚛️</div>
+                        <div class="card-badge">Foundation</div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Physics</h3>
+                        <p>Master fundamental physics concepts including energy, forces, and motion. Perfect for GCSE Physics preparation.</p>
+                        <div class="card-stats">
+                            <div class="stat">
+                                <span class="stat-number">46</span>
+                                <span class="stat-label">Goals</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-action">
+                        <button class="start-button" onclick="showTopicsView();">
+                            <span>Start Learning</span>
+                            <span class="button-arrow">→</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="features-section">
+                <div class="features-grid">
+                    <div class="feature-item">
+                        <div class="feature-icon">⚛️</div>
+                        <h4>Concept Mastery</h4>
+                        <p>Deep understanding of physics principles and formulas</p>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">📊</div>
+                        <h4>Progress Tracking</h4>
+                        <p>Monitor your physics learning journey with detailed analytics</p>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">🔬</div>
+                        <h4>Practical Application</h4>
+                        <p>Real-world physics problems and laboratory simulations</p>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">🎓</div>
+                        <h4>GCSE Preparation</h4>
+                        <p>Comprehensive coverage of GCSE Physics curriculum</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Expandable Topics View -->
+            <div class="topics-expanded-view" id="topicsExpandedView" style="display: none;">
+                <div class="topics-expanded-container">
+                    <div class="topics-expanded-header">
+                        <button class="back-to-overview-btn" onclick="hideTopicsView()">
+                            <span class="back-arrow">←</span>
+                            Back to Overview
+                        </button>
+                        <div class="topics-expanded-title">
+                            <h2>📚 Choose Your Physics Topic</h2>
+                            <p>Select a topic to explore its subtopics and track your progress</p>
+                        </div>
+                    </div>
+                    
+                    <div class="topics-expandable-grid" id="topicsExpandableGrid">
+                        <!-- Topics will be dynamically loaded here -->
+                    </div>
+                    
+                    <div class="continue-learning-bottom" id="continueLearningBottom" style="display: none;">
+                        <div class="continue-learning-card">
+                            <div class="continue-learning-header">
+                                <h3>🚀 Ready to Continue?</h3>
+                                <p>Pick up where you left off in your learning journey</p>
+                            </div>
+                            <button class="continue-learning-btn" id="continueMainLearningBtn">
+                                Continue Learning
+                                <span class="button-arrow">→</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="/js/progress-loader.js"></script>
+    <script src="/js/utils.js"></script>
+    <script src="/js/data-service.js"></script>
+    <script src="/js/main.js"></script>
+</body>
+</html> 

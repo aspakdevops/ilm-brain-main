@@ -1,0 +1,21 @@
+<div class="right-panel">
+    <div class="help-header">
+        <h4>AI Assistant</h4>
+        <button class="close-btn">&times;</button>
+    </div>
+    
+    <div class="chatbot-container">
+        <div class="chat-messages">
+            {{#each messages}}
+                <div class="chat-message {{type}}-message">
+                    {{content}}
+                </div>
+            {{/each}}
+        </div>
+        
+        <div class="chat-input">
+            <input type="text" placeholder="Ask me anything..." />
+            <button class="btn-chat">Send</button>
+        </div>
+    </div>
+</div> 

@@ -1,0 +1,56 @@
+FLATTENED DESIGN ZIP - FILE MAPPING
+Generated: 6/19/2025, 4:07:39 PM
+Total files: 25
+
+============================================================
+
+📁 components/
+----------------------------------------
+  📄 goal-item.html (from: components\goal-item.html)
+  📄 question-card.html (from: components\question-card.html)
+
+📁 css/
+----------------------------------------
+  📄 components.css (from: css\components.css)
+  📄 learning.css (from: css\learning.css)
+  📄 main.css (from: css\main.css)
+  📄 responsive.css (from: css\responsive.css)
+
+📁 images/
+----------------------------------------
+  📄 favicon.ico (from: images\favicon.ico)
+
+📁 js/
+----------------------------------------
+  📄 api-client.js (from: js\api-client.js)
+  📄 chatbot.js (from: js\chatbot.js)
+  📄 data-service.js (from: js\data-service.js)
+  📄 learning.js (from: js\learning.js)
+  📄 main.js (from: js\main.js)
+  📄 progress-loader.js (from: js\progress-loader.js)
+  📄 subtopics.js (from: js\subtopics.js)
+  📄 topics.js (from: js\topics.js)
+  📄 utils.js (from: js\utils.js)
+
+📁 layouts/
+----------------------------------------
+  📄 main.hbs (from: layouts\main.hbs)
+
+📁 pages/
+----------------------------------------
+  📄 index.html (from: pages\index.html)
+  📄 learning.html (from: pages\learning.html)
+  📄 subtopics.html (from: pages\subtopics.html)
+  📄 topics.html (from: pages\topics.html)
+
+📁 partials/
+----------------------------------------
+  📄 chatbot.html (from: partials\chatbot.html)
+  📄 footer.html (from: partials\footer.html)
+  📄 header.html (from: partials\header.html)
+  📄 sidebar.html (from: partials\sidebar.html)
+
+
+============================================================
+Note: Files with duplicate names have been renamed with directory prefixes.
+Original directory structure is preserved in this mapping file.
