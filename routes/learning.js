@@ -8,8 +8,4 @@ router.post('/chat', learningController.sendMessage);
 // Script generation endpoint
 router.post('/generate-script', learningController.generateScript);
 
-// Answer evaluation endpoint
-router.post('/evaluate-answer', learningController.evaluateAnswer);
-
-
 module.exports = router; 

@@ -1,0 +1,213 @@
+API Documentation for ILM Brain Prototype
+=========================================
+
+This document provides a detailed reference for all API endpoints available in the ILM Brain Prototype backend.
+
+--------------------------------------------------
+### **Content API**
+--------------------------------------------------
+
+#### **1. Get All Topics**
+- **Endpoint**: `GET /api/content/topics`
+- **Purpose**: Retrieves a list of all high-level topics for a given subject.
+- **Query Parameters**:
+  - `subject` (string, optional): The name of the subject. Defaults to "physics".
+- **Sample URL**:
+  `http://localhost:3000/api/content/topics?subject=Physics`
+- **Sample Success Response (200 OK)**:
+  ```json
+  {
+      "success": true,
+      "subject": "Physics",
+      "description": "The study of matter, energy, and the fundamental forces of nature.",
+      "topics": [
+          {
+              "id": 1,
+              "title": "Energy",
+              "subtopicCount": 12,
+              "questionCount": 63,
+              "goalCount": 46
+          }
+      ]
+  }
+  ```
+
+#### **2. Get Subtopics for a Topic**
+- **Endpoint**: `GET /api/content/topics/:topicId`
+- **Purpose**: Fetches all subtopics for a specific topic ID.
+- **URL Parameters**:
+  - `:topicId` (integer, required): The ID of the parent topic.
+- **Sample URL**:
+  `http://localhost:3000/api/content/topics/1`
+- **Sample Success Response (200 OK)**:
+  ```json
+  {
+      "success": true,
+      "subject": "Physics",
+      "topic": {
+          "id": 1,
+          "title": "Energy"
+      },
+      "subtopics": [
+          { "id": 1, "name": "Energy Stores and Systems", "goalCount": 2 },
+          { "id": 2, "name": "Work, Power and Efficiency", "goalCount": 4 }
+      ]
+  }
+  ```
+
+#### **3. Get Goals for a Subtopic**
+- **Endpoint**: `GET /api/content/topics/:topicId/subtopics/:subtopicId/goals`
+- **Purpose**: Gets all learning goals for a specific subtopic.
+- **URL Parameters**:
+  - `:topicId` (integer, required): The parent topic ID.
+  - `:subtopicId` (integer, required): The parent subtopic ID.
+- **Sample URL**:
+  `http://localhost:3000/api/content/topics/1/subtopics/1/goals`
+- **Sample Success Response (200 OK)**:
+  ```json
+  {
+      "success": true,
+      "subject": { "name": "Physics" },
+      "topic": { "id": 1, "title": "Energy" },
+      "subtopic": { "id": 1, "title": "Energy Stores and Systems" },
+      "goals": [
+        { "id": 1, "description": "Define what a system is in physics." },
+        { "id": 2, "description": "State the law of conservation of energy." }
+      ]
+  }
+  ```
+
+#### **4. Get Goal by ID**
+- **Endpoint**: `GET /api/content/goals/:goalId`
+- **Purpose**: Fetches a single goal by its unique ID, including its context.
+- **URL Parameters**:
+  - `:goalId` (integer, required): The ID of the goal.
+- **Sample URL**:
+  `http://localhost:3000/api/content/goals/1`
+- **Sample Success Response (200 OK)**:
+  ```json
+  {
+    "success": true,
+    "data": {
+      "subject": { "name": "Physics" },
+      "topic": { "id": 1, "title": "Energy" },
+      "subtopic": { "id": 1, "name": "Energy Stores and Systems" },
+      "goal": {
+        "id": 1,
+        "description": "Define what a system is in physics.",
+        "content": "A system is an object or group of objects that are being studied."
+      }
+    }
+  }
+  ```
+
+#### **5. Get All Goals by Name**
+- **Endpoint**: `POST /api/content/all-goals-by-subtopic`
+- **Purpose**: Fetches goals for a subtopic using human-readable names.
+- **Request Body**:
+  ```json
+  { "subject": "Physics", "topic": "Energy", "subtopic": "Energy Stores and Systems" }
+  ```
+- **Sample Success Response (200 OK)**:
+  ```json
+  {
+    "status": "success",
+    "data": { "goals": [ { "description": "...", "content": "..." } ] }
+  }
+  ```
+
+--------------------------------------------------
+### **Learning API**
+--------------------------------------------------
+
+#### **1. Get AI Chatbot Response**
+- **Endpoint**: `POST /api/learning/chat`
+- **Purpose**: Sends a question and context to an external AI service.
+- **Request Body**:
+  ```json
+  {
+    "question": "What is the conservation law of energy?",
+    "content": "The law of conservation of energy states that energy can neither be created nor destroyed...",
+    "sub_topic": "Energy Stores and Systems"
+  }
+  ```
+
+#### **2. Generate Educational Script**
+- **Endpoint**: `POST /api/learning/generate-script`
+- **Purpose**: Sends learning context to an external AI service to generate a script.
+- **Request Body**:
+  ```json
+  {
+    "content": "This section covers HTML and CSS.",
+    "level": "Beginner",
+    "goals": [ "Understand HTML structure.", "Apply CSS styles." ]
+  }
+  ```
+
+--------------------------------------------------
+### **Questions API**
+--------------------------------------------------
+
+#### **1. Evaluate Student Answer**
+- **Endpoint**: `POST /api/questions/evaluate-answer`
+- **Purpose**: Sends a question and a student's answer to an external AI service for evaluation.
+- **Request Body**:
+  ```json
+  {
+    "question": "What is the principle of conservation of energy?",
+    "student_answer": "Energy can't be created or destroyed."
+  }
+  ```
+
+#### **2. Get Sample Questions**
+- **Endpoint**: `POST /api/questions/sample-questions`
+- **Purpose**: Fetches up to three sample question texts for a specific subtopic.
+- **Request Body**:
+  ```json
+  { "subject": "Physics", "topic": "Energy", "subtopic": "Energy Stores and Systems" }
+  ```
+
+--------------------------------------------------
+### **User Progress API**
+--------------------------------------------------
+
+#### **1. Get User Progress**
+- **Endpoint**: `GET /api/user-progress`
+- **Purpose**: Retrieves the user's current learning position and progress.
+- **Sample URL**:
+  `http://localhost:3000/api/user-progress`
+- **Sample Success Response (200 OK)**:
+  ```json
+  {
+    "status": "success",
+    "data": {
+      "current_position": { "subject": "Physics", "topic_id": 1, "subtopic_id": 1, "goal_id": 2 },
+      "progress_percentage": 2.17
+    }
+  }
+  ```
+
+#### **2. Complete a Goal**
+- **Endpoint**: `PUT /api/user-progress/goal/:goalId`
+- **Purpose**: Marks a learning goal as complete.
+- **Sample URL**:
+  `http://localhost:3000/api/user-progress/goal/2`
+- **Sample Success Response (200 OK)**:
+  ```json
+  {
+    "status": "success",
+    "message": "Goal 2 completed successfully",
+    "data": { "goal_completed": 2, "progress": { "progress_percentage": 4.35 } }
+  }
+  ```
+
+#### **3. Reset User Progress**
+- **Endpoint**: `POST /api/user-progress/reset`
+- **Purpose**: Resets user progress back to the beginning.
+- **Sample Success Response (200 OK)**:
+  ```json
+  {
+    "status": "success",
+    "data": { "progress_percentage": 0 }
+  }
+  ``` 

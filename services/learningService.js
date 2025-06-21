@@ -77,7 +77,7 @@ class LearningService {
                 headers: {
                     'Content-Type': 'application/json'
                 },
-                timeout: 10000 // 5 second timeout
+                timeout: 20000 // 5 second timeout
             });
 
             console.log('✅ External API response received:', {
@@ -102,50 +102,6 @@ class LearningService {
             };
         }
     }
-
-    // Answer evaluation functionality - matches external API: POST https://ilm-main-pipeline.onrender.com/evaluate-answer
-    async evaluateAnswer(question, studentAnswer) {
-        try {
-            console.log('📊 Calling external answer evaluation API:', {
-                endpoint: `${config.EVALUATE_ANS_API_URL}`,
-                question: question ? question.substring(0, 100) + '...' : 'empty',
-                student_answer: studentAnswer ? studentAnswer.substring(0, 100) + '...' : 'empty'
-            });
-
-            const response = await axios.post(`${config.EVALUATE_ANS_API_URL}`, {
-                question: question,           // string (required)
-                student_answer: studentAnswer // string (required)
-            }, {
-                headers: {
-                    'Content-Type': 'application/json'
-                },
-                timeout: 20000 // 10 second timeout
-            });
-
-            console.log('✅ External API response received:', {
-                status: response.status,
-                is_correct: response.data.is_correct,
-                score: response.data.score
-            });
-
-            return {
-                success: true,
-                evaluation: response.data  // External API returns: {"is_correct": true, "question_type": "...", "score": 4, "explanation": "..."}
-            };
-        } catch (error) {
-            console.error('❌ External API error:', {
-                status: error.response?.status,
-                data: error.response?.data,
-                message: error.message
-            });
-
-            return {
-                success: false,
-                error: error.response?.data?.error || error.message || 'Answer evaluation service unavailable'
-            };
-        }
-    }
-
 
 }
 

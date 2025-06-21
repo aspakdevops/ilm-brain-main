@@ -118,52 +118,6 @@ class LearningController {
         }
     }
 
-    // Answer evaluation endpoint handler
-    async evaluateAnswer(req, res) {
-        try {
-            const { question, student_answer } = req.body;
-
-            // Validate all required fields
-            if (!question) {
-                return res.status(400).json({
-                    status: 'error',
-                    message: 'question is required'
-                });
-            }
-
-            if (!student_answer) {
-                return res.status(400).json({
-                    status: 'error',
-                    message: 'student_answer is required'
-                });
-            }
-
-            // All fields are required
-            const result = await learningService.evaluateAnswer(
-                question,       // question (required)
-                student_answer  // student_answer (required)
-            );
-
-            if (result.success) {
-                res.status(200).json({
-                    status: 'success',
-                    message: 'Answer evaluated successfully',
-                    data: result.evaluation
-                });
-            } else {
-                res.status(500).json({
-                    status: 'error',
-                    message: result.error
-                });
-            }
-        } catch (error) {
-            res.status(500).json({
-                status: 'error',
-                message: 'Internal server error'
-            });
-        }
-    }
-
     // TODO: Add other learning controller methods here
     // Examples:
     // - async getNextContent(req, res) {}

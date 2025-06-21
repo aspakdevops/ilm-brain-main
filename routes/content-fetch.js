@@ -22,4 +22,7 @@ router.get('/subtopics/:subtopicId/questions', contentFetchController.getQuestio
 // Get a specific goal by ID
 router.get('/goals/:goalId', contentFetchController.getGoalById);
 
+// Get goals by subject, topic, and subtopic names
+router.post('/all-goals-by-subtopic', contentFetchController.getGoalsByNames);
+
 module.exports = router; 

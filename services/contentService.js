@@ -271,6 +271,54 @@ class ContentService {
     }
 
     /**
+     * Get goal descriptions for a specific subtopic by names
+     */
+    async getGoalsByNames(subjectName, topicTitle, subtopicName) {
+        try {
+            this._validateDataLoaded();
+
+            const normalizedSubject = subjectName.toLowerCase();
+            const normalizedTopic = topicTitle.toLowerCase();
+            const normalizedSubtopic = subtopicName.toLowerCase();
+
+            const subjectData = this.topicsData.subjects.find(s => 
+                s.name.toLowerCase() === normalizedSubject
+            );
+            if (!subjectData) {
+                throw new Error(`Subject '${subjectName}' not found`);
+            }
+
+            const topicData = subjectData.topics.find(t => 
+                t.title.toLowerCase() === normalizedTopic
+            );
+            if (!topicData) {
+                throw new Error(`Topic '${topicTitle}' not found in subject '${subjectName}'`);
+            }
+
+            const subtopicData = topicData.subtopics.find(s => 
+                s.name.toLowerCase() === normalizedSubtopic
+            );
+            if (!subtopicData) {
+                throw new Error(`Subtopic '${subtopicName}' not found in topic '${topicTitle}'`);
+            }
+
+            const goals = subtopicData.goals.map(goal => ({
+                description: goal.description,
+                content: goal.content || `Learning content for: ${goal.description}`
+            }));
+
+            return {
+                success: true,
+                goals: goals
+            };
+
+        } catch (error) {
+            console.error('❌ Error fetching goals by name:', error);
+            throw error;
+        }
+    }
+
+    /**
      * Get content statistics for a subject
      */
     async getContentStats(subject = 'physics') {
@@ -335,11 +383,51 @@ class ContentService {
     }
 
     /**
-     * Validate that content data is loaded
+     * Checks if the static data has been loaded.
      */
     _validateDataLoaded() {
         if (!this.topicsData || !this.questionsData) {
-            throw new Error('Content data not loaded. Call loadStaticData() first.');
+            console.error('Content data is not loaded yet.');
+            throw new Error('Content service is not ready. Please try again later.');
+        }
+    }
+
+    /**
+     * Get a subtopic ID by its name hierarchy
+     */
+    async getSubtopicIdByNames(subjectName, topicName, subtopicName) {
+        try {
+            this._validateDataLoaded();
+
+            const normalizedSubject = subjectName.toLowerCase();
+            const normalizedTopic = topicName.toLowerCase();
+            const normalizedSubtopic = subtopicName.toLowerCase();
+
+            const subjectData = this.topicsData.subjects.find(s => s.name.toLowerCase() === normalizedSubject);
+            if (!subjectData) {
+                throw new Error(`Subject '${subjectName}' not found`);
+            }
+
+            const topicData = subjectData.topics.find(t => t.title.toLowerCase() === normalizedTopic);
+            if (!topicData) {
+                throw new Error(`Topic '${topicName}' not found in subject '${subjectName}'`);
+            }
+
+            const subtopicData = topicData.subtopics.find(s => s.name.toLowerCase() === normalizedSubtopic);
+            if (!subtopicData) {
+                throw new Error(`Subtopic '${subtopicName}' not found in topic '${topicName}'`);
+            }
+
+            return {
+                success: true,
+                subtopicId: subtopicData.id,
+                topicId: topicData.id,
+                subject: subjectData.name
+            };
+
+        } catch (error) {
+            console.error('❌ Error fetching subtopic ID by name:', error);
+            throw error;
         }
     }
 }

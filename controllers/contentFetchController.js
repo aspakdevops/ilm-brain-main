@@ -176,3 +176,31 @@ exports.getGoalById = async (req, res) => {
         }
     }
 };
+
+exports.getGoalsByNames = async (req, res) => {
+    try {
+        const { subject, topic, subtopic } = req.body;
+
+        if (!subject || !topic || !subtopic) {
+            return res.status(400).json({
+                status: 'error',
+                message: "Subject, topic, and subtopic names are required."
+            });
+        }
+
+        const result = await contentService.getGoalsByNames(subject, topic, subtopic);
+        
+        res.json({
+            status: 'success',
+            data: {
+                goals: result.goals
+            }
+        });
+    } catch (error) {
+        console.error("Error fetching goals by name:", error);
+        res.status(error.message.includes('not found') ? 404 : 500).json({ 
+            status: 'error', 
+            message: error.message || "Internal Server Error" 
+        });
+    }
+};
